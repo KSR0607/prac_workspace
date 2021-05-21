@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+main .homeContainer{
+    background-color: rgb(255, 188, 168);
+    /* background-color: tomato; */
+    /* font-size: 20px; */
+    color: white;
+    text-align: center;
+    line-height: 500px;
+}

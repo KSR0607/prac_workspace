@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>scale</title>
+<style>
+    .box {
+        margin: 200px auto;
+        width: 300px;
+        height: 300px;
+        background: gold;
+        border: 10px solid red;
+    }
+    img{
+        max-width: 100%;
+        transition: .5s;
+        opacity: 0.8;
+    }
+    .box:hover img{
+        /* scale default: 1 */
+        transform: scaleY(1.5);
+    }
+</style>
+</head>
+<body>
+
+    <div class="box">
+        <img src="./images/image002.jpg" alt="">
+    </div>
+
+</body>
+</html>

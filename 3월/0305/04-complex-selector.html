@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>complex selector</title>
+<style>
+    .parent{width: 200px;height: 200px;background-color: beige;}
+    .box1{background-color: orange;}
+    .box1+div {
+        width: 100px; height: 100px; background-color: burlywood;
+    }
+    .box1 ~ a {color: blue; text-decoration: none;}
+</style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="box1">box</div>
+        <div>box</div>
+        <div>box</div>
+        <a href="#">^__^</a>
+    </div>
+
+</body>
+</html>

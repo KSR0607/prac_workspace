@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>login page</title>
+</head>
+<body>
+    <header>
+        <hr>
+        <!-- inde.html은 상위폴더에있기 때문에 ../이다 -->
+        <a href="../index.html">d-travel</a>
+        <ul>
+            <!-- 아래 코드들에 ../가 없는 이유는 같은 폴더이기때문 -->
+            <li><a href="main.html">메인</a></li>
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="sign-up.html">회원가입</a></li>
+            <li><a href="travel-info.html">상세 화면</a></li>
+        </ul>
+        <hr>
+    </header>
+    
+    <section>
+        <h1>로그인화면</h1>
+
+        <form action="./main.html">
+            <fieldset>
+                <legend>로그인</legend>
+                <p>
+                    <label for="">ID : </label>
+                    <!-- name은 그룹화의 의미를 사용하고 웹에서는..음.. -->
+                    <!-- name과 id는 동일해도 된다. -->
+                    <!-- required는 input태그 안에 작성 -->
+                    <input type="text" name="member-id" id="member-id" required>
+                </p>
+                <p>
+                    <label for="">PW : </label>
+                    <input type="password" name="member-pw" id="member-pw" required>
+                </p>
+                <button><a href="sign-up.html">회원가입</a></button>
+                </a>
+                <!-- <input type="button"  value="회원가입"> -->
+                <input type="submit"  value="로그인">
+            </fieldset>
+        </form>
+
+
+    </section>
+
+
+    <footer>
+        <hr>
+        <address>
+            <p> Address : 대구광역시 중구 그린빌딩
+            Tel :<a href="tek:054)111-9121">054) 111-9121</a> <br>
+            E-mail :<a href="emailto:hans.park.dev@dtravel.com">hans.park.dev@dtravel.com</a> <br>
+            &copy; <b> All right reserve. </b>
+            </p>
+        </address>
+        <hr>
+    </footer>
+</body>
+</html>

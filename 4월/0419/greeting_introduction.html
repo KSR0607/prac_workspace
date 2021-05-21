@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>tool tip</title>
+<style>
+    .container{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+    .container .card p{
+        width: 200px;
+        margin: 10px auto;
+        padding: 1rem;
+        border-radius: 10px;
+        position: relative;
+        top: 10px;
+        opacity: 0;
+        transition: .5s;
+        text-align: center;
+        color: #fff;
+        background: #555;
+    }
+    .container .card:hover p{
+        top: -20px;
+        opacity: 1;
+    }
+    .container .card p::before{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 80px;
+        left: 100px;
+        transform: rotate(45deg);
+        background: #555;
+        width: 20px;
+        height: 20px;
+
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <img src="./image1/ggobugi2_300x300.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

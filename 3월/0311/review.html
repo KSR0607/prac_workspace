@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/reset.css">
+<title>review - 0311</title>
+
+<style>
+    .box1{
+        background-color: coral
+        ;
+    }
+    p {
+        font-size: 50px;
+    }
+    .box1 a {
+        color: cadetblue;
+    }
+    .box2 p {
+        font-size: 30px;
+    }
+    .box2 p:last-child {
+        color: chocolate;
+    }
+    .box2 p:nth-of-type(3) {
+        color: chocolate;
+    }
+    .box2 p:nth-child(3) {
+        color: crimson;
+    }
+</style>
+
+</head>
+<body>
+
+    <!-- 자식, 자손요소 -->
+    <div class="box1">
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <a href="#">
+            naver
+        </a>
+    </div>
+    <div class="box2">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <a href="#">test</a>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+
+
+    </div>
+</body>
+</html>

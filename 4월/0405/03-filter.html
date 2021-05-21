@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>filter</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        margin-top: 80px;
+        border: 1px solid #000;
+        /* text-align은 상속이 된다 */
+        text-align:center;
+        font-size: .6rem;
+    }
+    img{
+        max-width: 100%;
+        /* auto가 default다 */
+        /* height: auto; */
+    }
+    .item{
+        display: inline-block;
+        width: 30%;
+        margin-bottom: 10px;
+    }
+    .item:nth-child(1){
+        filter:blur(5px);
+    }
+    .item:nth-child(2){
+        filter:brightness(200%);
+    }
+    .item:nth-child(2):hover{
+        filter: brightness(400%);
+    }
+    .item:nth-child(3){
+        filter:contrast(60%);
+    }
+    .item:nth-child(4){
+        filter:drop-shadow(2px 2px red);
+    }
+    .item:nth-child(5){
+        filter:grayscale(60%);
+    }
+    .item:nth-child(6){
+        filter:hue-rotate(180deg);
+    }
+    .item:nth-child(7){
+        filter:invert(60%);
+    }
+    .item:nth-child(8){
+        filter:opacity(0.2);
+    }
+    /* 중첩이 됨 */
+    .item:nth-child(9){
+        filter:sepia(2) blur(3px);
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>title</h1>
+        <div class="item">
+            <img src="./images/filter-img.png" alt="">
+            <p>blur(px)</p>
+        </div>
+        <div class="item">
+            <img src="./images/filter-img.png" alt="">
+            <p>brightness(default:100%)</p>
+        </div>
+        <div class="item">
+            <img src="./images/filter-img.png" alt="">
+            <p>contrast(defautl:100%)</p>
+        </div>
+        <div class="item">
+            <img src="./images/filter-img.png" alt="">
+            <p>drop-shadow(default: 0px 0px color)</p>
+        </div>
+        <div class="item">
+            <img src="./images/filter-img.png" alt="">
+            <p>grayscale(default: 0%)</p>
+        </div>
+        <div class="item">
+            <img src="./images/filter-img.png" alt="">
+            <p>hue-rotate(default: 0-360deg)</p>
+        </div>
+        <div class="item">
+            <img src="./images/filter-img.png" alt="">
+            <p>invert(default:0%)</p>
+        </div>
+        <div class="item">
+            <img src="./images/filter-img.png" alt="">
+            <p>opacity(default: 1)</p>
+        </div>
+        <div class="item">
+            <img src="./images/filter-img.png" alt="">
+            <p>sepia(default : 0)</p>
+        </div>
+    </div>
+</body>
+</html>

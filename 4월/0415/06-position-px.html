@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>position pixel</title>
+<style>
+    .parent {
+        width: 500px;
+        height: 500px;
+        position: relative;
+        top: 200px;
+        left: 200px;
+        background: skyblue;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        background: gold;
+        border: 1px solid #000;
+        position: absolute;
+        text-align: center;
+        line-height: 100px;
+        font-weight: bold;
+    }
+    .center {
+        left: 250px;
+        bottom: 250px;
+        transform: translate(-50px, 50px);
+    }
+    .one {
+        top: -100px;
+    }
+    .two {
+        left: 400px;
+        top: -100px;
+    }
+    .three {
+        left: 400px;
+        bottom:-100px;
+    }
+    .four {
+        bottom: -100px;
+    }
+    .five {
+        left: 500px;
+    }
+    .six {
+        left: 500px;
+        bottom: 0;
+    }
+    .seven {
+        left: -100px;
+        bottom: 0;
+    }
+    .eight{
+        left: -100px;
+    }
+</style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="box center">center</div>
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+        <div class="box three">3</div>
+        <div class="box four">4</div>
+        <div class="box five">5</div>
+        <div class="box six">6</div>
+        <div class="box seven">7</div>
+        <div class="box eight">8</div>
+    </div>
+
+</body>
+</html>

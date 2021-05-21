@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="default/css/reset.css">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>header - nav</title>
+<style>
+    ul.gnb {
+        padding: 0;
+        background-color: indianred;
+        /* border: 1px solid #000; */
+    }
+    ul.gnb li {
+        display: inline-block;
+        background-color: lightskyblue;
+        /* border: 1px solid #000; */
+        text-align: center;
+        line-height: 100px;
+        width: 33.3333%;
+        height: 100px;
+        font-size: 20px;
+    }
+    ul.gnb li a{
+        /* inline을 block으로 변환 */
+        display: block;
+        color: #ffff;
+        background-color:sandybrown;
+        text-transform: uppercase;
+    }
+    ul.gnb li a:hover{
+        color: #000;
+        background-color: brown;
+        box-shadow: 0 2px 3px 2px #000;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <ul class="gnb">
+            <!-- inline 글이다 -->
+            <!-- li를 붙여줘야 공백이 안생긴다 -->
+            <li><a href="http://www.naver.com" target="_blank">menu1</a></li><li><a href="#">menu2</a></li><li><a href="#">menu3</a></li>
+        </ul>
+    </header>
+
+</body>
+</html>

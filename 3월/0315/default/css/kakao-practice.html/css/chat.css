@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+main {
+    background-color: #fff;
+}
+
+.chat .imgBox{
+    width: 20%;
+    vertical-align: top;
+    padding: 1%;
+    
+}
+.imgBox img{
+    width: 100%;
+    height: 110px;
+    vertical-align: top;
+    border-radius: 60px;
+    /* margin-top: 10px; */
+}
+
+/* parent ele */
+.content h3{
+    font-size:15px ;
+}
+
+.chat {
+    font-size: 0px;
+    width: 100%;
+    height: 120px;
+    padding-right: 20px;
+    /* line-height: 20px; */
+}
+.chat div{
+    display: inline-block;
+}
+
+.chat .content{
+ 
+    width: 65%;
+    padding-left:15px;
+    margin-top: 40px;
+}
+.chat .content h3, .chat .content small{
+    font-size: 15px;
+}
+
+.chat .time{
+    width: 15%;
+    margin-top: 45px;
+    vertical-align: top;
+ 
+    color: #adadad;
+}
+
+.chat small{
+    font-size: 10px;
+    color: #555555;
+}

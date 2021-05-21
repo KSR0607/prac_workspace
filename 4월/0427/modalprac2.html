@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>mdpr</title>
+<style>
+    img{
+        max-width: 100%;
+    }
+    input[id=modal]{
+        display: none;
+    }
+    input[id=modal]:checked ~ .container{
+        display: block;
+    }
+    input[id=modal] + label[for=modal]{
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        color: #fff;
+        border-radius: 15px;
+        background: crimson;
+        text-align: center;
+        line-height: 50px;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
+    .container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        z-index: 10;
+    }
+    .container > label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.137);
+        z-index: 1;
+    }
+    .container .modalcon{
+        box-sizing: border-box;
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+        border: 1px solid #000;
+        padding: 1rem;
+        background: #fff;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .modalcon > label{
+        display: inline-block;
+        border: 1px solid #000;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        background: #fff;
+        transform: translate(40%, -40%);
+    }
+</style>
+</head>
+<body> 
+
+    <input type="checkbox" name="" id="modal">
+    <label for="modal">view</label>
+
+    <div class="container">
+        <div class="modalcon">
+            <label for="modal">x</label>
+            <img src="./image/paris-bg.jpg" alt="">
+        </div>
+        <label for="modal">overlay</label>
+    </div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>06-layout</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    .clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+    header{
+        background: rgb(255, 199, 78);
+        /* overflow: hidden; */
+    }
+    .headerLeft{
+        background: rgb(168, 213, 255);
+        height: 100px;
+        width: 200px;
+        float: left;
+    } 
+    .headerRight{
+        background: rgb(168, 213, 255);
+        height: 100px;
+        width: 200px;
+        float: right;
+    }
+
+    main{
+        height: 500px;
+        background: rgb(255, 230, 150);
+    }
+    section{
+        overflow: hidden;
+        background: rgb(240, 251, 255);
+    }
+    .sectionItem{
+        float: left;
+        width: 30%;
+        margin-right: 5%;
+        height: 100px;
+        background: rgb(168, 196, 255);
+    }
+    .sectionItem:last-child{
+        margin-right: 0;
+    }
+    footer{
+        background: rgb(212, 255, 173);
+        height: 100px;
+        text-align: center;
+    }
+</style>
+<body>
+
+    <header class="clearfix"> 
+        <article class="headerLeft">
+            <h1>left</h1>
+        </article>
+        <article class="headerRight">
+            <h1>right</h1>
+        </article>
+    </header>
+
+    <main>
+        <h1>main</h1>
+    </main>
+
+    <section>
+        <article class="sectionItem">
+            <h1>article</h1>
+        </article>
+        <article class="sectionItem">
+            <h1>article2</h1>
+        </article>
+        <article class="sectionItem">
+            <h1>article3</h1>
+        </article>
+    </section>
+
+    <footer>
+        <h1>footer</h1>
+    </footer>
+
+</body>
+</html>

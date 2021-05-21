@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>review</title>
+<style>
+    /* .card{
+        background: pink;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .card img{
+        width: 200px;
+        float: left;
+    } */
+    /* cardDesc > camelCase naming rule */
+    /* 권장되지 않는다 */
+    /* .cardDesc{
+        overflow: hidden;
+        background: skyblue;
+    }
+    .cardDescTitle{
+        color: dodgerblue;
+    }
+    .cardDescPara{
+        padding: 10px;
+    } */
+
+    /* 일반적인 네이밍 방법 */
+    /* .card{
+        background: pink;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .card img{
+        width: 200px;
+        float: left;
+    }
+    .card-desc{
+        overflow: hidden;
+        background: skyblue;
+    }
+    .card-desc .title{
+        color: dodgerblue;
+    }
+    .card-desc .para{
+        padding: 10px;
+    } */
+
+    /* BEM
+        B:block
+        E:element
+        M:modifier
+        */
+    .card{}
+    .card__desc{}
+    .card__desc__title{}
+    .card__desc__para{}
+    /* 기능적 애를 수식할땐 -- */
+    .card__desc--btn{}
+</style>
+</head>
+<body>
+
+    <!-- 수업에서 하던 class naming rule -->
+    <!-- <div class="card">
+        <img src="./img/float-item.png" alt="">
+        <div class="cardDesc">
+            <h1 class="cardDescTitle">title</h1>
+            <p class="cardDescPara">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quo vero sapiente quia sint natus error labore molestias laudantium, aperiam nam provident nesciunt odit. Tempora aperiam porro repellendus cum explicabo!
+            </p>
+        </div>
+    </div> -->
+
+    <!-- <div class="card">
+        <img src="./img/float-item.png" alt="">
+        <div class="card-desc">
+            <h1 class="title">title</h1>
+            <p class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quo vero sapiente quia sint natus error labore molestias laudantium, aperiam nam provident nesciunt odit. Tempora aperiam porro repellendus cum explicabo!
+            </p>
+        </div>
+    </div> -->
+
+    <!-- BEM -->
+    <div class="card">
+        <img src="./img/float-item.png" alt="">
+        <div class="card__desc">
+            <h1 class="card__desc__title">title</h1>
+            <p class="card__desc__para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quo vero sapiente quia sint natus error labore molestias laudantium, aperiam nam provident nesciunt odit. Tempora aperiam porro repellendus cum explicabo!
+            </p>
+            <a href="#" class="card__desc--btn">click</a>
+        </div>
+    </div>
+</body>
+</html>

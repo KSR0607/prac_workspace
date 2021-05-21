@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>form practice</title>
+</head>
+<body>
+    
+    <fieldset>
+        <legend>개인 정보</legend>
+        이름 : <input type="text"> <br>
+        나이 : <input type="text"> <br>
+        성별 : <input type="radio" name="gender" id="female"><label for="female">여자</label>
+             <input type="radio" name="gender" id="male"><label for="male">남자</label>
+        <br>
+        거주지 : <select name="country" id="country">
+                    <option value="korea">한국</option>
+                    <option value="japan">일본</option>
+                    <option value="america">미국</option>
+               </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>기타 정보</legend>
+            취미 : <input type="checkbox" name="checkbox" id="art"><label for="art">미술</label>
+                   <input type="checkbox" name="checkbox" id="walk"><label for="walk">산책</label>
+                   <input type="checkbox" name="checkbox" id="music"><label for="music">음악감상</label>
+        <br>
+            특기 : <input type="checkbox" name="skill" id="eat"><label for="eat">먹기</label>
+                   <input type="checkbox" name="skill" id="run"><label for="run">뛰기</label>
+                   <input type="checkbox" name="skill" id="sleep"><label for="sleep">잠자기</label>
+         <br>   
+        <p>자기소개</p>
+        <textarea name="introduce" id="introduce" cols="30" rows="10"></textarea>
+    </fieldset>
+    
+</body>
+</html>

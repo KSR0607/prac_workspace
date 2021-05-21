@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>조합 선택자</title>
+    <style type="text/css">
+        /* 인접형제 선택자 */
+        .box h4 + p{color: #f00;}
+        .box2 p{color: blueviolet;}
+        /* h1.text { color: blueviolet;}
+        h2.text {color: cadetblue;} */
+        /* div.text h1 {color: cadetblue;} */
+        /* h1+h2{color: red;}
+        #h1 {color: saddlebrown;} */
+        h1{color: slateblue;}
+        article p:nth-child(3) { 
+            color: blue; 
+        }
+
+
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Heading Top</h1>
+        <p>first paragraph.</p>
+        <p>second paragraph.</p>
+        <p>third paragraph.</p>
+        <p>fourth paragraph.</p>
+    </article>
+
+
+    <div class="box">
+        <h4>title</h4>
+        <p>내용</p>
+        
+        <h5>title</h5>
+        <p>내용</p>
+    </div>
+    <div class="box2">
+        <h3>제목</h3>
+        <p>내용</p>
+
+        <h3>제목</h3>
+        <p>내용</p>
+    </div>
+    <!-- <div>
+        <h1 class="text">내용낸용</h1>
+        <h2 class="text">내용낸용</h1>
+    </div> -->
+    <!-- <div class="text">
+        <h1 id="h1">내용낸용</h1>
+        <h1>내용낸용</h1> -->
+    </div>
+    <div class="text2">
+        <h1 class="h2">내용낸용</h1>
+        <h1>내용낸용</h1>
+        <h1>내용낸용</h1>
+        <h1>내용낸용</h1>
+    </div>
+</body>
+</html>

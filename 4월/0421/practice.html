@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>practice selector</title>
+<style>
+    input[id="kimchi"]{
+        width: 100px;
+        display: none;
+    }
+    /* + 인접형제선택자 자손/자식선택자가아님 */
+    /* input[id="kimchi"] + label{ */
+    input[id="kimchi"] ~ label[for=egg]{
+        font-size: 30px;
+        color: pink;
+        display: inline-block;
+        border: 1px solid #000;
+        border-radius: 20px;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+    }
+    /* checked가 되었을때 가정 */
+    /* input[id=kimchi]:checked + label + .box{ */
+    /* 아래처럼하면 .box안의 core의 색이 바뀜 */
+    input[id=kimchi]:checked ~ .box{
+        transform: translate(100%);
+        background: gold;
+    }
+    .box {
+        /* width: 100px; */
+        display: inline-block;
+        height: 100px;
+        background: green;
+    }
+    .core{
+        width: 50px;
+        height: 50px;
+        background: skyblue;
+
+    }
+</style>
+</head>
+<body>
+
+
+    <!-- 
+        point
+        1. label for="id" > input id="id" id값이 동일하면 연결된다
+        2. 인접 형제 선택자 input + label
+        3. 일반 형제 셀렉터 ~ input ~ .box
+        4. label은 inline이다
+     -->
+    <!-- name : data key -->
+    <!-- <h1>좋아하는 음식은?</h1> -->
+    <!-- <input type="checkbox" name="" id="cook"> -->
+    <!-- <label for="cook">요리</label> -->
+    <!-- <input type="checkbox" name="" id="kimchi">
+    <label for="kimchi">김치찌개</label> -->
+    <label for="egg">김치찌개</label>
+    <div class="box">
+        <div class="core">
+            menu1
+        </div>
+        <div class="core">
+            menu1
+        </div>
+        <div class="core">
+            menu1
+        </div>
+
+    </div>
+
+</body>
+</html>

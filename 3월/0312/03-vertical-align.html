@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>vertical align 3</title>
+    <style>
+        .box{
+            border: 1px solid #000;
+        }
+        .company {
+            font-size: 200px;
+            background-color: thistle;
+        }
+
+        .mark {
+            display: inline-block;
+            font-size: 1.2em;
+            background-color: #fff;
+            /* middle 보다 baseline을 씀 , top 과 bottom 쓰기 */
+            vertical-align: top;
+            margin-top: 30px;
+            border: 1px solid red;
+            border-radius: 20%;
+            padding: 0.1em;
+            color: red;
+        }
+    </style>    
+</head>
+<body>
+    <div class="box">
+        <span class="company">google</span>
+        <span class="mark">new</span>
+    </div>
+</body>
+</html>

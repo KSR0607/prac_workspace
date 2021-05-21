@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>bg practice</title>
+<style>
+    *{
+        box-sizing: border-box;;
+    }
+    .container{
+        width: 800px;
+        height: 800px;
+        border:50px dotted coral;
+        margin: 0 auto;
+        padding: 30px;
+        /* 반복x */
+        /* background-repeat: no-repeat; */
+        /* x축으로만 리핏 */
+        /* background-repeat: repeat-x; */
+        /* y축으로만 리핏 */
+        /* background-repeat: repeat-y; */
+        /* 크기조절 */
+        /* background-size: 50% 50%; */
+        /* 이미지 비율에 맞춰서 채워주는것. 가장 많이 사용함 */
+        /* background-size: cover; */
+        /* background-size: contain; */
+        /* background-image: url(./images/piano.jpg); */
+        /* background-repeat: no-repeat; */
+        /* background-position: center; */
+
+        /* 한 번에 쓰기 */
+        /* background:url(images/piano.jpg) no-repeat center/cover; */
+        /* background:url(images/piano.jpg);
+        background-repeat: no-repeat;
+        background-size: 200px 200px;
+        background-position: right bottom; */
+        /* 아래처럼 하나만 써주면 center가 생략되어있다. 그니까 적용은돼있는데 기본이 center라는뜻
+        x축만 잡아줬을땐 나머진 무조건 center다.(y축이!) */
+        /* background-position: 100px; */
+        /* background:
+        url(images/piano.jpg) left top,
+        url(images/piano.jpg) right top,
+        url(images/piano.jpg) center top,
+        url(images/piano.jpg) left center,
+        url(images/piano.jpg) right center,
+        url(images/piano.jpg) center,
+        url(images/piano.jpg) left bottom,
+        url(images/piano.jpg) right bottom,
+        url(images/piano.jpg) bottom; */
+        /* background-size: 200px 200px; */
+        /* background-repeat: no-repeat; */
+        background: url(images/piano.jpg) no-repeat center/cover;
+        background-origin: border-box;
+        background-clip: padding-box;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+    <!-- 
+        1.image : contents
+        2. bg(backgroung) img : context(배경)
+     -->
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati impedit quis, minima incidunt, repudiandae, alias laboriosam tempore corporis consequuntur numquam inventore reiciendis provident error aspernatur ab rerum velit adipisci beatae?
+        Repudiandae sed nobis sequi inventore reprehenderit perspiciatis asperiores quo praesentium dolorem, exercitationem, provident quos quasi nisi adipisci dolores commodi eveniet tempore quam doloribus. Itaque eos molestias numquam quod sit iste.
+        Nesciunt modi, optio amet hic consequuntur iste voluptatem deleniti quas sunt laudantium unde, cum consectetur, veniam odio quae sequi animi fugit perferendis ex non error! Facilis voluptates fugiat ea maxime.
+        Fuga ipsam, ducimus culpa atque soluta quae quasi possimus repellendus nihil excepturi autem adipisci quas fugiat at eum doloremque necessitatibus quidem voluptas nobis eaque et. Commodi sapiente voluptatum minus harum?
+        Velit commodi consequatur, necessitatibus perspiciatis tenetur earum architecto laudantium ratione. Repellendus sequi porro, expedita, nostrum nulla ab quas sapiente, enim odit nisi vel tenetur corporis voluptatum. Nisi praesentium natus tempore.
+        Rerum fugiat eius voluptatibus dolorem obcaecati vel quidem et repellat dolores corporis commodi ducimus corrupti officia velit officiis excepturi expedita molestias, magnam molestiae perferendis consequuntur consectetur fuga inventore tenetur. At.
+        Reiciendis, vel quidem! Corrupti maiores commodi facere! Dignissimos, aliquam, minus laudantium iusto obcaecati vero molestiae unde quisquam adipisci facere reprehenderit perferendis veniam? Corporis assumenda commodi explicabo nostrum eum possimus accusantium!
+        Adipisci quos velit omnis quidem. Magni quibusdam eveniet quia, illo modi explicabo facilis doloribus nam, suscipit nihil et illum aspernatur possimus esse eligendi saepe neque delectus corrupti impedit ipsam qui.
+        Magnam impedit modi mollitia! Voluptates, repellat! Saepe commodi provident fugiat et mollitia unde sequi nostrum, quam labore sapiente voluptatum eum aspernatur, perferendis molestiae velit ea. Aspernatur saepe repellendus corrupti quod!
+        Quos, enim consequuntur. Labore, similique accusantium quod sint officia neque totam, dolorum quis fugit doloremque, voluptatibus architecto! Dicta inventore saepe deserunt quia. Architecto consequuntur ea unde incidunt totam amet voluptatem?
+    </div>
+
+</body>
+</html>

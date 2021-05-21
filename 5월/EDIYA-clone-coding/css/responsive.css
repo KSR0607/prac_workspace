@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+@media (max-width:810px){
+    .menubar{
+        display: none;
+    }
+    /* .ediya-main */
+    .ediya-main{
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+    .ediya-main > .inner > a {
+        padding-left: 1rem;
+    }
+    .ediya-main:hover{
+        height: 230px;
+        border-bottom: none;
+    }
+    .ediya-main img{
+        float: none;
+        margin-top: 2rem;
+    }
+    .ediya-main .ediya-menu {
+        margin-top: 25px;
+        float:left;
+        padding:0;
+    }
+    .ediya-main .ediya-menu li{
+        display: inline-block;
+        height: 50px;
+        left: 0;
+        width: 49%;
+    }
+    .ediya-main .ediya-menu li.menu-item > a:before{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 5px;
+        background: #282828;
+        bottom:0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 1s;
+    }
+    .ediya-main .ediya-menu li.menu-item:nth-child(1) > a:hover:before{
+        width:10%;
+    }
+    .ediya-main .ediya-menu li.menu-item > a:hover:before{
+        width:20%;
+    }
+    ul.ediya-menu-item{
+        display: none;
+    }
+    section.banner{
+        display: none;
+    }
+    
+    /* section.mobile-banner */
+    section.mobanner{
+        display: block;
+    }
+
+    /* section.factory */
+    section.factory > .inner{
+        margin-bottom: 250px;
+    }
+    section.factory .factory-txt h2 p{
+        background: none;
+    }
+    section.factory .factory-txt{
+        text-align: center;
+        padding: 0;
+    }
+    section.factory .factory-txt h2 span{
+        font-size: 50px;
+    }
+    section.factory img{
+        float: none;
+        margin-top: none;
+        width: 1063px;
+        height: 349px;
+        text-align: center;
+    }
+    .factory-btn{
+        text-align: center;
+        padding: 3rem 0;
+    }
+    
+    section.culture-lab{
+        background-attachment: local;
+    }
+
+    /* section.startup */
+    section.startup{
+    }
+    .startup-txt{
+        float: none;
+        text-align: center;
+    }
+    .startup-btn{
+        text-align: center;
+    }
+    .startup-btn a{
+        margin: 10px auto;
+        display: block;
+    }
+    .startup-btn a:nth-child(3){
+        margin: 0 auto;
+    }
+
+
+    .lab-menu{
+        max-width: 55%;
+    }
+    .lab-barista{
+        max-width:55%;
+    }
+
+}

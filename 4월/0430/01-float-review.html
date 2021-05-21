@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>float review</title>
+<style>
+    img{
+        width: 200px;
+
+    }
+    .wrap {
+        border: 1px solid #000;
+        /* float, overflow */
+        overflow: hidden;
+    }
+    img.fly{
+        float: left;
+        border: 10px solid red;
+    }
+    img:nth-child(3){
+        float: right;
+    }
+    p{
+        border: 10px solid blue;
+    }
+    .box{
+        border: 10px solid blue;
+        overflow: hidden;
+    }
+</style>
+</head>
+<body>
+
+    <div class="wrap">
+        <img src="./float/postit.png" class="fly">
+        <img src="./float/postit.png" class="fly">
+        <img src="./float/postit.png" class="fly">
+        <!-- <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum modi possimus minima! Aperiam ipsum nam, mollitia hic cumque tenetur voluptatibus delectus quaerat quasi beatae sint officiis modi amet eaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum modi possimus minima! Aperiam ipsum nam, mollitia hic cumque tenetur voluptatibus delectus quaerat quasi beatae sint officiis modi amet eaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum modi possimus minima! Aperiam ipsum nam, mollitia hic cumque tenetur voluptatibus delectus quaerat quasi beatae sint officiis modi amet eaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum modi possimus minima! Aperiam ipsum nam, mollitia hic cumque tenetur voluptatibus delectus quaerat quasi beatae sint officiis modi amet eaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum modi possimus minima! Aperiam ipsum nam, mollitia hic cumque tenetur voluptatibus delectus quaerat quasi beatae sint officiis modi amet eaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum modi possimus minima! Aperiam ipsum nam, mollitia hic cumque tenetur voluptatibus delectus quaerat quasi beatae sint officiis modi amet eaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum modi possimus minima! Aperiam ipsum nam, mollitia hic cumque tenetur voluptatibus delectus quaerat quasi beatae sint officiis modi amet eaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum modi possimus minima! Aperiam ipsum nam, mollitia hic cumque tenetur voluptatibus delectus quaerat quasi beatae sint officiis modi amet eaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum modi possimus minima! Aperiam ipsum nam, mollitia hic cumque tenetur voluptatibus delectus quaerat quasi beatae sint officiis modi amet eaque.
+        </p> -->
+    </div>
+    <div class="box">
+        test
+    </div>
+
+</body>
+</html>

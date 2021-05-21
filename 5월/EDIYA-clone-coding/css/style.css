@@ -1,0 +1,587 @@
+@charset "utf-8";
+@import "./common.css";
+@import "./reset.css";
+
+
+/* header */
+header ul li{
+    display: inline-block;
+}
+/* header menubar */
+header .menubar{
+    padding:20px 0;
+    font-size: .8rem;
+    color: #848484;
+}
+header .menubar img{
+    margin-top: .1rem;
+}
+.brand-mainmenu{
+    float: left;
+}
+.brand-mainmenu .brand-menu li{
+    padding: 0 1rem;
+}
+.brand-mainmenu .brand-menu li:first-child{
+    padding-left: 0;
+}
+.user-mainmenu{
+    float: right;
+}
+.user-mainmenu .user-menu{
+    float: left;
+}
+.user-mainmenu .user-menu li{
+    padding: 0 1rem;
+}
+.user-mainmenu .ediya-sns{
+    float: left;
+}
+.user-mainmenu .ediya-sns img{
+    margin-top: -.2rem;
+    padding-right: .1rem;
+}
+
+
+/* header ediya-main */
+.ediya-main{
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    height: 80px;
+    transition:all .4s;
+    z-index: 999;
+}
+.ediya-main:hover{
+    height: 320px;
+    border-bottom: 2px solid #686868;
+}
+.ediya-main img{
+    float: left;
+    margin-top: 2rem;
+}
+.ediya-main .ediya-menu{
+    float: right;
+    padding: 1rem 0;
+}
+.ediya-main .ediya-menu li{
+    position: relative;
+}
+.ediya-main .ediya-menu li.menu-item > a:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background: #282828;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+}
+.ediya-main .ediya-menu li.menu-item:nth-child(1) > a:hover:before{
+    width:30%;
+}
+.ediya-main .ediya-menu li.menu-item > a:hover:before{
+    width: 60%;
+}
+.ediya-main .ediya-menu > li > a{
+    padding: 1rem 2rem;
+}
+.ediya-menu-item {
+    position: absolute;
+    /* margin-top: -50px; */
+    top: 70px;
+    left: 0;
+    width: 150px;
+    padding-left: 2rem;
+    background: #fff;
+    /* display: none; */
+}
+
+.ediya-menu-item li{
+    display: block;
+    width: 110px;
+    font-size: .8rem;
+    color: #848484;
+}
+.ediya-menu-item li a{
+    padding: .5rem 0;
+
+}
+.ediya-menu-item li:hover{
+    color: #000;
+}
+
+
+/* section.banner */
+input[name=tab]{
+    display: none;
+}
+section.banner{
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+.banner-roll{
+    /* width: 300%; */
+    overflow: hidden;
+}
+section.banner .banner-item{
+    white-space: nowrap;
+    font-size: 0;
+    transition: all .8s;
+}
+section.banner .banner-item > li{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+section.banner .banner-item > li > .roll-item{
+    display: block;
+    position: relative;
+}
+section.banner .banner-item > li > .roll-item img{
+    width: 100%;
+}
+.banner-btn{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+}
+.banner-btn label{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+}
+.banner-item > li label{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 24px;
+    height: 45px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.banner-item > li label.left{
+    left: 20px;
+    background: url(../img/banner/main_visual_prev.png)no-repeat center/cover;
+}
+.banner-item > li label.right{
+    right: 20px;
+    background: url(../img/banner/main_visual_next.png)no-repeat center/cover;
+}
+input[id=tab1]:checked ~ .banner-btn label[for=tab1]{
+    background: rgb(106, 133, 255);
+}
+input[id=tab2]:checked ~ .banner-btn label[for=tab2]{
+    background: rgb(106, 133, 255);
+}
+input[id=tab3]:checked ~ .banner-btn label[for=tab3]{
+    background: rgb(106, 133, 255);
+}
+
+input[id=tab1]:checked ~ .banner-roll .banner-item{
+    transform: translateX(0);
+}
+input[id=tab2]:checked ~ .banner-roll .banner-item{
+    transform: translateX(-100%);
+}
+input[id=tab3]:checked ~ .banner-roll .banner-item{
+    transform: translateX(-200%);
+}
+
+/* section.mobanner */
+input[name=motab]{
+    display: none;
+}
+section.mobanner{
+    display: none;
+    position: relative;
+}
+.mobanner-view{
+    margin-top: 80px;
+    overflow: hidden;
+    position: relative;
+    width: 810px;
+}
+.mobanner-roll{
+    position: relative;
+    white-space: nowrap;
+    font-size: 0;
+    transition: all .5s;
+}
+.mobanner-item{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.mobile-btn{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+}
+.mobile-btn label[for*=motab]{
+    display: inline-block;
+    background: rgb(160, 160, 160);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+input[id=motab1]:checked ~ .mobanner-view .mobile-btn label[for=motab1],
+input[id=motab2]:checked ~ .mobanner-view .mobile-btn label[for=motab2],
+input[id=motab3]:checked ~ .mobanner-view .mobile-btn label[for=motab3]{
+    background: rgb(106, 133, 255);
+}
+input[id=motab1]:checked ~ .mobanner-view .mobanner-roll{
+    transform: translateX(0);
+}
+input[id=motab2]:checked ~ .mobanner-view .mobanner-roll{
+    transform: translateX(-100%);
+}
+input[id=motab3]:checked ~ .mobanner-view .mobanner-roll{
+    transform: translateX(-200%);
+}
+
+
+/* section.factory */
+section.factory{
+    background: #06468E;
+    color: #fff;
+    overflow: hidden;
+}
+.factory .factory-txt {
+    padding-top: 6rem;
+}
+.factory .factory-txt h2 p{
+    width: 880px;
+    height: 74px;
+    background: url(../img/section/dream_factory_txt.png)no-repeat center/cover;
+    /* 이게모징 일단 이디야홈페이지에서 보고 신기해서 넣었습니다. */
+    background-size: 100% auto;
+    margin-bottom: -1rem;
+}
+.factory .factory-txt h2 > span{
+    display: inline-block;
+}
+.factory .factory-btn a{
+    display: inline-block;
+    border: 2px solid #fff;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.factory .factory-btn a:hover{
+    background: #fff;
+    color: #06468E;
+}
+.factory .factory-btn a:nth-child(1){
+    margin-right: 5px;
+}
+.factory .factory-txt > p{
+    margin: 2rem 0;
+}
+section.factory img{
+    float: right;
+    margin-top: -280px;
+    width: 1063px;
+    height: 349px;
+    max-width: 860px;
+}
+
+/* section.for-ediya */
+section.for-ediya{
+    background: url(../img/section/block02_bg.jpg)no-repeat center/cover;
+    text-align: center;
+    color: #fff;
+    padding: 5rem 0;
+}
+.for-e-txt{
+    /* padding: 3rem 0; */
+}
+.for-e-txt h2{
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom:7rem;
+    position: relative;
+}
+.for-e-txt h2:before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #fff;
+    bottom: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.for-e-txt h2 span{
+    font-weight: bold;
+}
+.for-e-txt h3{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.for-e-btn{
+    padding: 3rem 0 0 0;
+}
+.for-e-btn a{
+    margin: 0 auto;
+    border: 2px solid #fff;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+}
+.for-e-btn a:hover{
+    background: #fff;
+    color: #688EA4;
+}
+
+/* section.startup */
+section.startup{
+    background: url(../img/section/company_bg.jpg)no-repeat center/cover;
+    padding: 5rem 0;
+    color: #fff;
+}
+.startup-txt{
+    float: right;
+}
+.startup-txt h2{
+    font-weight: 300;
+    font-size: 3rem;
+}
+.startup-txt p{
+    padding-top: 3rem;
+}
+.startup-btn{
+    padding-top: 2rem;
+}
+.startup-btn a{
+    display: inline-block;
+    border: 2px solid #fff;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 5px;
+}
+.startup-btn a:nth-child(3){
+    margin-right: 0;
+}
+.startup-btn a:hover{
+    background: #fff;
+    color: #5E3F6F;
+}
+
+/* section.culture-lab */
+section.culture-lab{
+    background: url(../img/section/block03_bg.jpg)no-repeat center;
+    background-attachment:fixed;
+    color: #fff;
+    padding: 5rem 0;
+    text-align: center;
+}
+.culture-txt{
+    padding: 2rem 0;
+    margin-bottom: 4rem;
+}
+.culture-txt h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+    position: relative;
+}
+.culture-txt h2:before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #1F76E4;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.culture-txt h2 span{
+    font-weight: 800;
+}
+.culture-txt h2 p{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+/* cultre-con */
+.culture-con{
+    margin: 0 auto;
+    background: url(../img/section/block03_line.png)no-repeat center top;
+}
+.culture-content{
+    max-width: 975px;
+    margin: 0 auto;
+}
+.culture-content li{
+    float: left;
+    width: 33.3333%;
+    padding: 0 2rem;
+}
+.c-cont-item{
+    /* animation: fadein 1.5s forwards; */
+    margin-top: 110px;
+}
+.c-cont-item:hover{
+    animation: x-animate infinite 1.5s ease-in-out;
+}
+.c-cont-item:nth-child(2){
+    margin-top: 30px;
+}
+@keyframes x-animate{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+        
+    }
+    100%{
+        transform: translateY(0px);
+        
+    }
+}
+/* @keyframes fadein{
+    0%{
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} */
+
+
+/* section.coffee-lab */
+section.coffee-lab{
+    background: #fff;
+    position: relative;
+    color: #3C3C3C;
+    text-align: center;
+    padding: 8rem 0 ;
+}
+.coffee-lab h2{
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 0;
+}
+.coffee-lab h2 span{
+    font-weight: 800;
+}
+.coffee-lab h3{
+    font-weight: 300;
+    font-size: 1.5rem;
+    position: relative;
+}
+.coffee-lab h3:before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: rgb(78, 78, 78);
+    bottom: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* lab-con */
+.lab-con{
+    margin-bottom: 15rem;
+}
+.lab-menu{
+    margin-top: 9rem;
+    float: left;
+    margin-right: -5%;
+    position: absolute;
+    z-index: 4;
+    overflow: hidden;
+}
+.lab-barista{
+    top: 250px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+}
+.lab-menu a img,
+.lab-barista a img{
+    transition: all 1s;
+}
+.p-bar{
+    color: #fff;
+    position: relative;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.p-bar:before{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 5px;
+    background: #fff;
+    bottom: -7px;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    transition: all 1s;
+}
+.lab-menu:hover a .p-bar:before,
+.lab-barista:hover a .p-bar:before
+{
+    width: 90px;
+}
+.lab-menu:hover a img,
+.lab-barista:hover a img
+{
+    transform: scale(1.1);
+}
+
+
+/* footer */
+footer{
+    background: #262626;
+    color: #818181;
+    text-align: center;
+}
+footer .ediya-com{
+    font-size: .8rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #494949;
+}
+footer .ediya-com li{
+    display: inline-block;
+    margin: 0 1rem;
+}
+.com-content{
+    padding: 2.2rem 0;
+}
+.com-content .com-ccm{
+    margin-top: -30px;
+    text-align: right;
+}
+.com-content .com-ccm img{
+    width: 170px;
+}
+footer .ediya-address{
+    padding: .5rem 0;
+}
+footer .ediya-address span{
+    font-size: .8rem;
+    background: url(../img/footer/footer_line.gif)no-repeat right;
+    margin: .3rem 0;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+footer .copy{
+    font-size: .8rem;
+    padding: 1rem 0 3rem 0;
+}

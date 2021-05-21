@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>03-basic-css 선언하기</title>
+<!-- css파일을 따로 만들어서 링크를 걸어서 css파일에서 따로 style 값주기 --> -->
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/02-main.css"> 
+<style>
+    @import url(./css/main.css);
+</style>
+
+<style>
+    @import "css/main.css";
+</style>
+
+<style>
+    h3 {
+        /* rgba의 a는 opacity(alpha) 값이다 0 ~ 1 까지 있다. */
+        color: rgba(0, 0, 255, 0.5);
+    }
+    h2 {
+        /* 0 1 2 3 4 5 6 7 8 9 A B C D E F  */
+        /* 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 */
+        color:#e65454;
+    }
+    p {
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+    }
+    h1 {
+        /* color: red; 잘 쓰지 않는다. */
+        color: #00AD00;
+    }
+    h4 {
+        color: rgba(40%, 40%, 40%, 50%);
+        font-size: 50px;
+    }
+    h5 {
+        color: hsl(0%, 100%, 10%);
+    }
+</style>
+
+
+</head>
+
+<body>
+    
+    <h3>
+        권세리
+    </h3>
+    <h2>
+        킹세리
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, facere.
+    </p>
+    <h1>
+        hello world~!
+    </h1>
+    <h3>
+        hello world
+    </h3>
+    <h4>
+        hello world
+    </h4>
+    <h5>
+        hello world
+    </h5>
+</body>
+</html>

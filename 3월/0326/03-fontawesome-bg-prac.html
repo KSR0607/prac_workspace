@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<title>company intro</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    .intro{
+        background: rgb(197, 248, 255);
+        padding: 50px;
+        height: 800px;
+        background: url(./industrial.jpg) no-repeat center/cover;
+        color: #fff;
+    }
+    .intro h1{
+        margin-bottom: 30px;
+    }
+    ul{
+        margin-bottom: 30px;
+    }
+    ul li{
+        margin-bottom: 10px;
+    }
+    ul li a:before{
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+        margin-right:20px;
+    }
+    ul li:nth-child(1) a:before{
+        content: '\f30b'; /* unicode 삽입 */
+    }
+    ul li:nth-child(2) a:before{
+        content: '\f0f9'; /* unicode 삽입 */
+    }
+    ul li:nth-child(3) a:before{
+        content: '\f100'; /* unicode 삽입 */
+    }
+    ul li:nth-child(4) a:before{
+        content: '\f2b9'; /* unicode 삽입 */
+    }
+    a.more {
+        border: 2px solid #fff;
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        border-radius: 20px;
+        padding-top: 6px;
+    }
+    a.more:after{
+        content:'\f061';
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+        color: coral;
+        margin-left: 8px;
+    }
+</style>
+</head>
+<body>
+
+    <section class="intro">
+        <h1>창의적이고 경쟁력 있는 선도화학 기업</h1>
+        <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">사업영역</a></li>
+            <li><a href="#">투자정보</a></li>
+            <li><a href="#">인재채용</a></li>
+        </ul>
+        <a href="#" class="more">more</a>
+    </section>
+
+</body>
+</html>

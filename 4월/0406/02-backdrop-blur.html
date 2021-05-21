@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>backdrop blur</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* DOM tree 구조에서
+    html 최상위 객체다 */
+    html, body{
+        height: 100%;
+        /* border: 10px solid red; */
+    }
+    body{
+        /* border: 10px solid blue; */
+        backdrop-filter: blur(10px);
+        background: url(./images/easterBunny.jpg)no-repeat center/cover;
+    }
+    .wrap{
+        width: 600px;
+        height: 100%;
+        /* border: 10px solid #000; */
+        margin: 0 auto;
+        text-align: center;
+    }
+    .box{
+        margin-top: 200px;
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        /* background: rgba(236, 205, 176, 0.336); */
+        background: url(images/easterBunny.jpg)no-repeat center/cover;
+        border: 1px solid rgb(214, 214, 214);
+        /* filter: blur(10px); */
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+    }
+    .box h1{
+        margin-top: 110px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    .box a{
+        /* all (전체): intial(초기화한다는뜻) */
+        /* all: initial; */
+        display: inline-block;
+        color: inherit;
+        color: #fff;
+        text-decoration: none;
+        padding: .8em;
+        border: 1px solid #fff;
+        background:  rgb(231, 175, 154);
+        border-radius: 30px;
+    }
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">
+            <h1>HELLO WORLD</h1>
+            <a href="#">payment</a>
+        </div>
+    </div>
+</body>
+</html>

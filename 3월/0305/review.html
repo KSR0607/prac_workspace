@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+<title>0305-review</title>
+<style>
+    body {
+        background-color: #777;
+
+    }
+    .press { color:darkgreen; font-size: 3em; text-shadow: 0px 1px rgb(15, 66, 15), 0px -1px rgb(134, 255, 134) ; }
+    /* 기본 폰트 변경 */
+    .sample1{ font-family: Arial, Helvetica, sans-serif; }
+    /* 폰트를 다운받아 변경 */
+    @font-face {
+        font-family: raleway;
+        src: url(./font/Raleway/Raleway-Italic-VariableFont_wght.ttf);
+    } 
+    .sample2 { font-family: raleway; }
+    /* link or @import로 폰트 변경 */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+    .sample3 { font-family: 'Stick', sans-serif; }
+    p {color: rosybrown;}
+    .sample2 {color: royalblue;}
+    #overwrite {color: salmon;}
+    .sample3 {font-family: 'Stick', sans-serif;}
+
+</style>
+</head>
+<body>
+    <p class="press sample1">
+        Lorem ipsum dolor sit amet consectetur.
+    </p>
+    <p class="press sample2">
+        Lorem ipsum dolor sit amet consectetur.
+    </p>
+    <p class="press sample3" id="overwrite">
+        Lorem ipsum dolor sit amet consectetur.
+    </p>
+    <p class="press sample en" style="color: springgreen;">
+        Lorem ipsum dolor sit amet consectetur.
+    <p class="press sample3">
+        Lorem ipsum dolor sit amet consectetur.
+    </p>
+</body>
+</html>

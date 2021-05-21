@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>form another</title>
+</head>
+<body>
+    <form>
+    <fieldset>
+        <legend>입사지원 정보</legend>
+        <p>
+            <label for="email">아이디(e-mail) : </label>
+            <input type="text" id="email" required>
+            <label for="select mail">@</label>
+            <select name="email" id="select mail">
+                <option value="">목록</option>
+                <option value="naver.com">naver.com</option>
+                <option value="gmail.com">gmail.com</option>
+                <!-- <option value="email">naver.com</option>
+                <option value="email">gmail.com</option> -->
+            </select>
+        </p>
+
+        <p>
+            <label for="password">비밀번호 : </label>
+            <input type="password" id="password" required>
+        </p>
+
+        <p>
+            <label for="cellphone">휴대전화 : </label>
+            <select name="company" id="cellphone">
+                <option value="">통신사 선택</option>
+                <option value="KTF">KTF</option>
+                <option value="SKT">SKT</option>
+                <option value="LG">LG</option>
+                <!-- <option value="company">KTF</option>
+                <option value="company">SKT</option>
+                <option value="company">LG</option> -->
+            </select>
+
+            <input type="text" maxlength="3" required>
+            <label>-</label>
+            <input type="text" maxlength="4" required>
+            <label>-</label>
+            <input type="text" maxlength="4" required>
+            <!-- maxlength 를 넣으면 입력 글자수가 제한됨 -->
+        </p>
+
+        <p>
+            <label>직군 : </label>
+            <input type="radio" name="job" id="designer"><label for="designer">디자이너</label>
+            <input type="radio" name="job" id="worker"><label for="worker">개발자</label>
+        </p>
+
+        <p>
+            <label>희망 근무지 (*복수선택 가능) : </label>
+            <input type="checkbox" name="where" id="la" ><label for="la">LA</label>
+            <input type="checkbox" name="where" id="tokyo" ><label for="tokyo">도쿄</label>
+            <input type="checkbox" name="where" id="london" ><label for="london">런던</label>
+            <input type="checkbox" name="where" id="singa" ><label for="singa">싱가폴</label>
+        </p>
+    </fieldset>
+    <input type="submit" value="입사지원 완료">
+    </form>
+</body>
+</html>

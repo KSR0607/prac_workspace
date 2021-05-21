@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+ul{
+    list-style: none;
+}
+
+.inner{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* header */
+header{
+    border-bottom: 1px solid #888;
+    overflow: hidden;
+    height: 70px;
+    line-height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+}
+nav.travel_Nav h2{
+    float: left;
+}
+nav.travel_Nav ul{
+    float: right;
+}
+nav.travel_Nav ul li{
+    display: inline-block;
+    padding: 0 .6rem;
+}
+
+nav.travel_Nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* section.travel_Info */
+section.travel_Info{
+    margin-top: 70px;
+    overflow: hidden;
+}
+section.travel_Info .travel_Desc{
+    float: left;
+    background: beige;
+    border: 3px solid #eee;
+    overflow: hidden;
+    width: 49%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+section.travel_Info .travel_Desc img{
+    float: left;
+    width: 40%;
+    margin: 5px;
+    border-radius: 15px;
+}
+section.travel_Info .travel_Desc p{
+    overflow: hidden;
+}
+section.travel_Info .travel_Desc p a{
+    padding: .5rem 1rem;
+    display: inline-block;
+    background: #eee;
+    margin: 5px;
+    border-radius: 15px;
+}
+/* seciton.travel_Tag */
+
+section.travel_Tag ul{
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+section.travel_Tag ul li{
+    float: left;
+    width: 23%;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 20px;
+    margin: 5px;
+    background: coral;
+}
+
+/* section.travel_User */
+section.travel_User {
+    overflow: hidden;
+    text-align: center;
+}
+section.travel_User .user_Info{
+    float: left;
+    width: 30%;
+    margin-right: 15px;
+}
+section.travel_User .user_Info:nth-child(3){
+    margin-right: 0;
+}
+section.travel_User .user_Info img{
+    border-radius: 50%;
+    /* margin: 5px; */
+}
+section.travel_User .user_Info p{
+    padding: 0 15px;
+    background: rgb(169, 175, 255);
+    position: relative;
+}
+section.travel_User .user_Info p:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top: -150px;
+    left: 0;
+    z-index: -1;
+    background: rgb(169, 175, 255);
+}
+/* footer */
+footer{
+    background: gold;
+    height: 200px;
+    text-align: center;
+}
+footer ul{
+    margin: 50px 50px;
+    display: inline-block;
+}
+footer ul li:nth-child(1){
+    padding-bottom: 5px;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}

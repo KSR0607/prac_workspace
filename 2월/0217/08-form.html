@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>form another</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>입사지원 정보</legend>
+            <p>
+                <label for="id">아이디(e-mail) : </label>
+                <input type="text" id="id" required>
+                <label for="apo">@</label>
+                <select name="email" id="mail">
+                    <option value="email">목록</option>
+                    <option value="email">naver.com</option>
+                    <option value="email">gmail.com</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="password">비밀번호 : </label>
+                <input type="password" id="password" required>
+            </p>
+
+            <p>
+                <label for="cellphone">휴대전화 : </label>
+                <select name="company" id="cellphone">
+                    <option value="">통신사 선택</option>
+                    <option value="company">KTF</option>
+                    <option value="company">SKT</option>
+                    <option value="company">LG</option>
+                </select>
+                <input type="text" required>
+                <label>-</label>
+                <input type="text" required>
+                <label>-</label>
+                <input type="text" required>
+            </p>
+
+            <p>
+                <label>직군 : </label>
+                <input type="radio" name="hobby" id="designer"><label for="designer">디자이너</label>
+                <input type="radio" name="hobby" id="worker"><label for="worker">개발자</label>
+            </p>
+
+            <p>
+                <label>희망 근무지 (*복수선택 가능) : </label>
+                <input type="checkbox" name="job" id="la" ><label for="la">LA</label>
+                <input type="checkbox" name="job" id="tokyo" ><label for="tokyo">도쿄</label>
+                <input type="checkbox" name="job" id="london" ><label for="london">런던</label>
+                <input type="checkbox" name="job" id="singa" ><label for="singa">싱가폴</label>
+            </p>
+        </fieldset>
+    <!-- form 태그 안에서만 작동한다 왜냐면 type="submit" -->
+        <input type="submit" value="complete!">
+    </form>
+    <!-- 일반적인 button을 의미한다 -->
+    <input type="button" value="입사지원 완료">
+    <!-- 버튼 태그로 버튼을 표현하는 방법 -->
+    <button>입사지원 완료!</button>
+
+</body>
+</html>

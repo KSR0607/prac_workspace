@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>aside gnb</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0 ;
+        box-sizing: border-box;
+    }
+    ul li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    header{
+        text-align: center;
+        line-height: 100px;
+        height: 100px;
+        border: 1px solid #000;
+        text-transform: uppercase;
+    }
+    aside{
+        width: 40%;
+        height: 100vh;
+        padding-top: 40px;
+        background: lightcoral;
+    }
+    .left_side ul li{
+        color: #fff;
+        opacity: 0.4;
+        font-size: 40px;
+        padding-left: 20px;
+        transition: 0.5s;
+    }
+    .left_side ul li:hover{
+        opacity: 1;
+    }
+    ul li:before{
+        content: ">";
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>header</h1>
+    </header>
+    <aside>
+        <div class="left_side">
+            <ul>
+                <li><a href="#">new arrival</a></li>
+                <li><a href="#">summer collection</a></li>
+                <li><a href="#">winter collection</a></li>
+                <li><a href="#">special offers</a></li>
+                <li><a href="#">sale</a></li>
+            </ul>
+        </div>
+    </aside>
+
+</body>
+</html>

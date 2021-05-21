@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>review 2</title>
+</head>
+<style>
+    .parent p:first-child {
+        color: red;
+    }
+    .parent p:last-child {
+        color: blue;
+    }
+    .parent p:nth-child(3) {
+        color: yellow;
+    }
+    /* \뒤에서 두번째 */
+    .parent p:nth-last-child(2){
+        color: violet;
+    }
+    /* parent_2에서 p태그 3번째 선택하기 */
+    .parent_2 p:nth-of-type(3){
+        color: indianred;
+    }
+</style>
+<body>
+    <div class="parent">
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <hr>
+    <div class="parent_2">
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <a href="#">sample</a>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+</body>
+</html>

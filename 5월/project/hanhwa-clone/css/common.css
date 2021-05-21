@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+:root{
+    /* 10px */
+    font-size: 62.5%;
+    --primary-color:#f37321;
+    --color-green:rgba(46, 179, 0, 0.9);
+
+    /* typography */
+    /* 20px */
+    --font-large:2rem;
+    /* 16px */
+    --font-regular:1.6rem;
+
+}
+body{
+    font-size: var(--font-regular);
+    font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;
+}
+.clearfix:after{
+    content: '';
+    display: inline-block;
+    clear: both;
+}
+.marginfix:after,
+.marginfix:before{
+    content: '';
+    display: table;
+}
+.br-mo{
+    display: none;
+}
+/* icon */
+.icon{
+    background: url(../image/icon.png);
+}
+.ir-logo{
+    background-position: -306px -457px;
+    width: 159px;
+    height: 57px;
+}
+.logo{
+    background-position: 0 -597px;
+    width: 260px;
+    height: 32px;
+    /* border: 1px solid #000; */
+}
+.btn-toggle{
+    background-position: -651px 0;
+    width: 50px;
+    height: 24px;
+}
+.btn-lang{
+    background-position: -273px 0;
+    width: 32px;
+    height: 23px;
+}
+.search-glass{
+    background-position: -243px 0;
+    width: 19px;
+    height: 23px;
+    position: relative;
+}
+.search-glass:after{
+    content: '';
+    background-image: url(../image/icon.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-position: -243px 0;
+    width: 19px;
+    height: 23px;
+    display: inline-block;
+}
+.ir-icon{
+    background-position: -306px -457px;
+    width: 159px;
+    height: 57px;
+}
+.arrow-right{
+    background-position: -120px -100px;
+    width: 16px;
+    height: 8px;
+}
+.arrow-right-coral{
+    background-position: -400px -100px;
+    width: 32px;
+    height: 32px;
+}
+.icon-sns{
+    background-image: url(../image/sns/sns.png);
+}
+.btn-post{
+    background-position: -60px -120px;
+    width: 161;
+    height: 45px;
+}
+.icon-time{
+    background-position: -327px -123px;
+    width: 14px;
+    height: 14px;
+}
+
+/* 직무특성 */
+.challenge .icon-career{
+    position: relative;
+}
+.challenge .icon-career:before{
+    content: '';
+    position: absolute;
+    background-image: url(../image/icon.png);
+    background-position: -115px -205px;
+    width: 26px;
+    height: 29px;
+    left: -40px;
+}
+.challenge .icon-talent{
+    position: relative;
+}
+.challenge .icon-talent:before{
+    content: '';
+    position: absolute;
+    background-image: url(../image/icon.png);
+    background-position: -175px -205px;
+    width: 26px;
+    height: 29px;
+    left: -40px;
+}
+.outer-list .career p{
+    padding: 20px 0;
+    line-height: 1.75;
+    color: #666;
+}
+
+/* 인재상 */
+.icon-talent{
+    background-position: -175px -205px;
+    background-image: url(../image/icon.png);
+    width: 26px;
+    height: 29px;
+}
+.arrow-right-small {
+    position: relative;
+}
+.arrow-right-small:after {
+    content: '';
+    position: absolute;
+    background-position: -231px -120px;
+    background-image: url(../image/icon.png);
+    width: 6px;
+    height: 8px;
+}

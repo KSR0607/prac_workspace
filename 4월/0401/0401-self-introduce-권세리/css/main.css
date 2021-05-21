@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+.wrap{
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+header{
+    padding-top: 50px;
+    height: 220px;
+    background: #c01010;
+}
+header .inner {
+    margin: 0 auto;
+    text-align: center;
+    width: 1000px;
+}
+header .inner a{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    padding: 10px;
+}
+header .inner a span{
+    font-size: 40px;
+}
+header .inner p{
+    padding: 10px;
+}
+header .inner span{
+    color: #999;
+    font-size: 10px;    
+}
+header .banner {
+    width: 180px;
+    height: 40px;
+    overflow: hidden;
+    margin: 5px auto; 
+}
+header .banner .scroll{
+    width: 540px;
+    font-size: 0;
+    margin-left:0px;
+    animation: scroll 5s infinite alternate;
+}
+header img{
+    width: 180px;
+    height: 40px;
+}
+@keyframes scroll{
+    0%{
+    margin-left: 0px;
+        
+    }
+    50%{
+    margin-left: -180px;
+        
+    }
+    100%{
+    margin-left: -360px;
+        
+    }
+}
+.menu{
+    background: #000;
+    color: #eee;
+}
+.menu .inner{
+    margin: 0 auto;
+    text-align: center;
+    width: 1000px;
+}
+.menu .inner li{
+    display: inline-block;
+}
+.menu .inner li a{
+    padding-top: 15px;
+    width: 100px;
+    height: 50px;
+    display: block;
+}
+.menu .inner li a:hover{
+    color: rgb(201, 201, 201);
+    transform: rotate3d(0, 1, 1, 10deg);
+}
+.menu .inner li a:active{
+    color: rgb(255, 104, 104);
+}
+
+.userprofile{
+    padding-top: 50px;
+}
+.userprofile .inner{
+    margin: 0 auto;
+    text-align: center;
+    width: 1000px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #999;
+}
+.userprofile .inner div{
+    display: inline-block;
+}
+.userprofile .userimage img{
+    width: 200px;
+    border-radius: 15px;
+    vertical-align: center;
+    transition: all 0.3s;
+}
+.userprofile .userimage:hover img{
+    transform: scale(1.3);
+}
+.userprofile .userinfo{
+    text-align: center;
+    padding-top: 50px;
+    vertical-align: top;
+    margin: 10px;
+}
+.userprofile .userinfo a{
+    color: rgba(104, 104, 104, 0.6);
+}
+.userprofile .userinfo2{
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: justify;
+}
+
+/* simple reset css */
+a{
+    color: inherit;
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+/* sns rotate */
+footer{
+    border-top: 1px solid #999;
+}
+    .sns {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .sns a{
+
+        display: inline-block;
+        padding: 1rem;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+    }
+    .sns a .fab{
+        color: #999;
+        font-size:20px;
+        width:20px;
+        height: 10px;
+        transition: all 0.8s;
+    }
+    
+    .sns a:hover .fab{
+        transform: rotateY(360deg);
+        color: #fff;
+    }
+
+    .sns a:nth-child(1):hover{
+        background: #3b5999;
+    }
+    .sns a:nth-child(2):hover{
+        background: #e4405f;
+    }
+    .sns a:nth-child(3):hover{
+        background: #55acee;
+    }
+    .sns a:nth-child(4):hover{
+        background: #f57d00;
+    }

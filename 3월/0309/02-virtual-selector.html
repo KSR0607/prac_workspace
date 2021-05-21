@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>virtual selector2</title>
+    <style>
+        /* 첫번째 자식 요소를 선택 */
+        /* ul li:first-child {
+            color: darkorange;
+            font-size: 30px;
+        }
+        /* 마지막 자식 요소 선택 */
+        /* ul li:last-child {
+            color: sandybrown;
+            font-size: 30px;
+        } */ 
+        /* 두번째 자식 요소 선택 */
+        /* ul li:nth-child(2) {
+            color: skyblue;
+            font-size: 20px;
+        }
+        ul li:nth-child(3) {
+            color: peru;
+            font-size: 20px;
+        } */
+        /* div p:nth-child(odd) {
+            color: plum;
+        } */
+        div p:nth-child(even) {
+            color: gold;
+            font-weight: bold;
+        }
+        /* ul li:nth-child(3) {
+            color: plum;
+            font-size: 30px;
+        } */
+        /* 위에꺼안됨 */
+        /* ul li:   (4) {
+            color: plum;
+            font-size:30px;
+        } */
+        /* 그러나 nth-child(4)로 해주니 된다 */
+        /* ul li:nth-of-type(4) {
+            color: purple;
+        }
+        ul p {
+            color: salmon;
+        } */
+    </style>
+</head>
+<body>
+    <h1>가상 셀렉터 nth-child</h1>
+     <ul>
+         <li>Lorem ipsum dolor sit amet.</li>
+         <li>Lorem ipsum dolor sit amet.</li>
+         <p>Lorem ipsum dolor sit amet consectetur.</p>
+         <li>Lorem ipsum dolor sit amet.</li>
+         <li>Lorem ipsum dolor sit amet.</li>
+         <li>Lorem ipsum dolor sit amet.</li>
+     </ul>
+     <!-- <div>
+         <h1>nth-child(odd),(even)사용</h1>
+         <p>Lorem ipsum dolor sit amet.</p>
+         <p>Lorem ipsum dolor sit amet.</p>
+         <p>Lorem ipsum dolor sit amet.</p>
+         <p>Lorem ipsum dolor sit amet.</p>
+         <p>Lorem ipsum dolor sit amet.</p>
+     </div> -->
+</body>
+</html>

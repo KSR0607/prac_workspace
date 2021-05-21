@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>prac side nav</title>
+<style>
+    ul{
+        margin: 0;
+        padding: 0;
+        /* border: 1px solid #000; */
+    }
+    li{
+        list-style: none;
+        /* border: 1px solid #000; */
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    input[id="check"]{
+        display: none;
+    }
+    .sideNav{
+        top: 0;
+        right: 0;
+        position: fixed;
+        width: 200px;
+        height: 100%;
+        /* background: pink; */
+        border: 3px solid pink;
+        background: linear-gradient(to bottom, pink, white);
+        text-align: center;
+        transform: translate(100%);
+    }
+    .sideNav:hover{
+
+        transform: translate(0%);
+    }
+    .sideNav label{
+        display: inline-block;
+        position: absolute;
+        background: pink;
+        line-height: 70px;
+        width: 100px;
+        height:70px;
+        right: 100%;
+        top: 300px;
+        border-radius: 20px 0 0 20px;
+    }
+    .sideNavBar{
+        margin-top: 50px;
+    }
+    .sideNavBar li{
+        height: 70px;
+        line-height: 70px;
+    }
+    .sideNavBar li:nth-child(1){
+        height: 200px;
+    }
+    .sideNavBar li img{
+        /* width: 50px; */
+        filter: drop-shadow(0 0 1px crimson);
+        height: 200px;
+    }
+    .sideNavBar li a {
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+    <input type="checkbox" name="" id="check">
+    <div class="sideNav">
+        <label for="check">Here</label>
+        <ul class="sideNavBar">
+            <li>
+                <img src="./images/lego-311265_1280.png" alt="">
+            </li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">menu</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

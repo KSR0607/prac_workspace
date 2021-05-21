@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>virtual-selector</title>
+<!-- 가상셀렉터 -->
+<style>
+    div {
+        font-size: 100px;
+        background-color: coral;
+        color: #fff;
+    }
+    a {
+        font-size: 50px;
+        color: inherit;
+        /* inherit는 위 아빠, 부모요소의 그걸 물려받는다 */
+    }
+    /* 방문하지 않은 상태일때를 선택 */
+    a:link {
+        color: black;
+    }
+    /* 방문한 상태일 때 */
+    a:visited {
+        color: skyblue;
+    }
+    /* 웹링크들 눌렀을때 자주색이고 안누른건 파란색인거본적있지? 그거 색을바꿔준다고생각하면됨 */
+    /* a:hover은 링크에 마우스 갖다댔을때 글씨나 암튼 색 변하게 하는거 */
+    a:hover {
+        background-color: teal;
+    }
+    /* 활성(클릭된) 상태일때 */
+    a:active, a:focus {
+        background-color: crimson;
+    }
+    /* 포커스가 들어와 있을때 tab눌렀을때! */
+    a:focus {
+        background-color: darkkhaki;
+    }
+</style>
+</head>
+<body>
+    <h1>가상 셀렉터</h1>
+    <div>
+        sample
+        <a href="http://www.naver.com">
+            naver
+        </a>
+        <span>span text</span>
+    </div>
+    <hr>
+    <a href="https://www.thehersheycompany.com/ko_kr/home.html">
+        hershes
+    </a>
+    <hr>
+    <a href="http://www.yahoo.com">
+        yahoo
+    </a>
+</body>
+</html>

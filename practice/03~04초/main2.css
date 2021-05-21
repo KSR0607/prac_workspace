@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.main2 {
+    width: 600px;
+    border: 1px solid #fff;
+    text-align: center;
+    margin: 0 auto;
+    color: #000;
+    background: #fff;
+}
+.main2 h1{
+    padding: 1rem;
+}
+.profile div{
+    display: inline-block;
+}
+.profile .imgbox{
+    width: 30%;
+}
+.profile .imgbox img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+.profile .profileinfo{
+    width: 60%;
+    height: 180px;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 70px;
+}
+.profile:nth-of-type(2) .profileinfo{
+    text-align: right;
+}

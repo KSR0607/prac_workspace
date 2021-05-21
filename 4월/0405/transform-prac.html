@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>transform prac</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .wrap{
+        text-align: center;
+    }
+    ul, li{
+        list-style: none;
+    }
+    ul li{
+        margin: 10px 10px;
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        background: rgb(233, 229, 183);
+        box-shadow: 0 0 3px 1px rgb(0, 0, 0);
+        line-height: 100px;
+        transition: all .5s;
+    }
+
+    .translate li:nth-child(1):hover{
+        transform: translateX(20px);
+    }
+    .translate li:nth-child(2):hover{
+        transform: translateY(20px);
+    }
+    .translate li:nth-child(3):hover{
+        transform: translate(20px, 30px);
+    }
+    .rotate li:nth-child(1):hover{
+        transform:rotatex(30deg);
+    }
+    .rotate li:nth-child(2):hover{
+        transform:rotateY(30deg);
+    }
+    .rotate li:nth-child(3):hover{
+        transform:rotate(-180deg);
+    }
+    .scale li:nth-child(1):hover{
+        transform: scaleX(.5);
+    }
+    .scale li:nth-child(2):hover{
+        transform: scaleY(.5);
+    }
+    .scale li:nth-child(3):hover{
+        transform: scale(.5);
+    }
+    .skew li:nth-child(1):hover{
+        transform: skewX(30deg);
+    }
+    .skew li:nth-child(2):hover{
+        transform: skewY(30deg);
+    }
+    .skew li:nth-child(3):hover{
+        transform: skew(30deg, -50deg);
+    }
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <ul class="translate">
+            <li>translateX</li>
+            <li>translateY</li>
+            <li>translate</li>
+        </ul>
+        <ul class="rotate">
+            <li>rotateX</li>
+            <li>rotateY</li>
+            <li>rotate</li>
+        </ul>
+        <ul class="scale">
+            <li>scaleX</li>
+            <li>scaleY</li>
+            <li>scale</li>
+        </ul>
+        <ul class="skew">
+            <li>skewX</li>
+            <li>skewY</li>
+            <li>skew</li>
+        </ul>
+    </div>
+</body>
+</html>

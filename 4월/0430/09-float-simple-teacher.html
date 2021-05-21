@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>float simple project</title>
+<style>
+    /* reset */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    :root{
+        --border-radius:15px;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+    }
+    /* header */
+    header{
+        background: url(./float/float-sample-header-bg.jpg)no-repeat center/cover;
+        height: 500px;
+        position: relative;
+        z-index: -1;
+    }
+    header h1{
+        white-space: nowrap;
+        color: #fff;
+        font-size: 5rem;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-shadow: 0 0 5px rgba(0,0,0,.5);
+    }
+    /* card */
+    section.card{
+        margin-top: -100px;
+        /* background: pink; */
+    }
+    .cardContainer{
+        width: 800px;
+        /* background: skyblue; */
+        margin: 0 auto;
+    }
+    .cardItem {
+        padding: 10px;
+        overflow: hidden;
+        background: beige;
+        border-radius:var(--border-radius);
+        margin: 10px;
+    }
+    .cardItem:nth-child(2n - 1) img{
+        float: left;
+    }
+    .cardItem:nth-child(2n) img{
+        float: right;
+    }
+    .cardItem .cardDesc{
+        overflow: hidden;
+        padding: 10px;
+        /* background: coral; */
+    }
+    .cardItem:nth-child(2n) .cardDesc{
+        text-align: right;
+    }
+    .cardDesc a{
+        padding: 10px 10px;
+        border: 1px solid #ddd;
+        color: #666;
+        border-radius:var(--border-radius);
+        margin-top: 30px;
+        background: skyblue;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>beginning your <br> journey</h1>
+    </header>
+    <section class="card">
+        <ul class="cardContainer">
+            <li class="cardItem">
+                <img src="./float/float-item.png" alt="">
+                <div class="cardDesc">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, a corrupti maxime ratione harum dignissimos enim praesentium totam at dolore amet, obcaecati vero, rem veritatis eum modi dolores nihil quo?</p>
+                    <a href="#">get Ticket</a>
+                </div>
+            </li>
+            <li class="cardItem">
+                <img src="./float/float-item.png" alt="">
+                <div class="cardDesc">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, a corrupti maxime ratione harum dignissimos enim praesentium totam at dolore amet, obcaecati vero, rem veritatis eum modi dolores nihil quo?</p>
+                    <a href="#">get Ticket</a>
+                </div>
+            </li>
+            <li class="cardItem">
+                <img src="./float/float-item.png" alt="">
+                <div class="cardDesc">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, a corrupti maxime ratione harum dignissimos enim praesentium totam at dolore amet, obcaecati vero, rem veritatis eum modi dolores nihil quo?</p>
+                    <a href="#">get Ticket</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

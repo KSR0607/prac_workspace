@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>dtravel review</title>
+</head>
+<body>
+    <!-- index( 들여쓰기 : 4칸 기본,  ) -->
+    <h1>D-travel review</h1>
+    <table border    width="50%">
+        <colgroup>
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+            <col>
+        </colgroup> 
+        <thead>
+            <tr>
+                <th><button width=><a href="http://www.google.com">1</a></button></th>
+                <th><a href="http://www.google.com"><input type="button" value="2" style="width:60pt; height: 30pt;"></a></th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </tbody>
+    </table>
+    <input type=button style="WIDTH: 60pt; HEIGHT: 60pt" value="네모난버튼">
+    <input type=button style="width:60pt;height:60pt;" value="네모난버튼">
+    <!-- disable(망가뜨리다), enable -->
+    <input type="text" value="건셀이" disabled>
+    <br>
+    <textarea name="article" id="article" cols="30" rows="10" disabled>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Iste harum consectetur atque, vitae deserunt, necessitatibus,
+        sapiente incidunt voluptate minus ad architecto voluptatem cupiditate
+        natus velit fuga similique nam doloremque voluptatum.
+    </textarea>
+    <input type="checkbox" name="" id="" disabled>
+
+    <input type="text" name="" id="" placeholder="이름작성부탁">
+
+    <!-- id, name, value -->
+    <!-- id는 해당 페이지에 태그에 부여하는 주민번호와 같다.
+        특성: 유일해야 한다. 어디에나 부여 가능하다.
+        목적: 구분과 선택(css) -->
+
+    <input type="text" name="" id="member-id" value="건셀이">
+    <!-- 
+        name은 서버에 보낼때 사용하는 값의 이름
+        name과 id는 같아도 상관없다. 하지만 구분은 해야한다.
+        서버에 보낼 때 값을 중복시키지 않아야하기 때문.
+      -->
+    <!-- ex: (알파카 : 안녕하세요)
+    {
+        key(이름) : value(값)
+    }
+    -->
+    <!-- value는 key에 대응하는 값이다 -->
+    <input type="text" name="" id="member-id" value="건셀이" >
+    <select name="nationaly" id="nationaly" required>
+        <option value="">선택</option>
+        <option value="korea">한국</option>
+        <option value="japan">일본</option>
+    </select>
+
+    <!-- ex -->
+    <label for="#id"> 여행지 </label>
+    <input type="radio" name="travel-spot" id="gangreung" value="gangreung">
+    <label for="gangreung">강릉</label>
+
+    <!-- 버그 잡기 --> 
+    <!-- 만들어 낸다(50%) > 버그를 해결한다(50%) -->
+    <!-- 
+        1. 넓이 설정을 안됐거나 잘못 되었을때
+        2. 설정은 정상이나 태그가 누락되어 table이 정상 작동하지 않을때
+     -->
+    <!-- 주석으로 만들었다가 한 부분씩 정상화했다가 버그를 찾기 -->
+
+</body>
+</html>

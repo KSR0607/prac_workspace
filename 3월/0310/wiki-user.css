@@ -1,0 +1,119 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrap {
+    padding: 20px;
+}
+
+
+i {
+    color: black;
+    font-size: 40px;
+}
+
+
+header {
+    text-align: left;
+    margin: 10px;
+}
+header>p{
+    font-size: 30px;
+}
+header p~p{
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.user{
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #888;
+}
+.user h1{margin-bottom: 10px;}
+
+
+.what {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #888;
+}
+
+.question {
+    width: 200px;
+    height: 130px;
+    border: 1px solid #777;
+    text-align: center;
+    padding: 30px;
+}
+.question p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.news{
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #888;
+}
+.news h3, .news p{
+    text-align: center;
+    padding: 5px;
+}
+.news li{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+.opinion{
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #888;
+}
+.opinion h3{
+    text-align: center;
+    padding: 5px;
+}
+.opinion p{
+    text-align: center;
+    color: skyblue;
+    margin: 10px;
+}
+.opinion li {
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+
+
+.project {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #888;
+}
+.project>p{
+    text-align: center;
+    color: skyblue;
+}
+.project p+p{
+    color: black;
+}
+.project p+p+p{ 
+    color: skyblue;
+}
+
+.bosu {
+    border: 1px solid #777;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding: 70px;
+}
+
+.bosu p {
+    margin-top: 20px;
+    color: skyblue;
+}

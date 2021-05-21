@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>basic layout</title>
+<style>
+    header{
+        background: gold;
+        text-align: center;
+        height: 100px;
+        font-size: 3rem;
+        line-height: 100px;
+    }
+    section{
+        height: 500px;
+    }
+    section.left{
+        width: 300px;
+        /* width: 50%; */
+        float: left;
+        background: dodgerblue;
+    }
+    section.right{
+        width: calc(100% - 300px);
+        /* width: 50%; */
+        float: right;
+        /* height: 600px; */
+        background: coral;
+    }
+    footer{
+        background: yellowgreen;
+        clear: both;
+        height: 200px;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        header
+    </header>
+    <section class="left">
+        left
+    </section>
+    <section class="right">
+        right
+    </section>
+    <footer>
+        footer
+    </footer>
+
+</body>
+</html>

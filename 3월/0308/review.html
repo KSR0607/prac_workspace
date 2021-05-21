@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>review - css</title>
+    <style>
+        /* div { */
+            /* padding */
+            /* padding: 40px; */
+            /* margin:여백 */
+            /* margin: 50px; */
+            /* margin-top: 100px;
+            margin-right: 100px;
+            margin-bottom: 100px;
+            margin-left: 100px; */
+
+            /* border: 1px solid salmon; width: 100px; height: 100px; */
+            /* background-color: lightyellow; */
+        /* } */
+        /* .parent>div {
+            border: 1px solid #000;
+
+        } */
+        .parent div {
+            border: 1px solid #000;
+        }
+        /* 인접 형제 셀렉터 */
+        div .child + div {background-color: coral;}
+        /* 일반 형제 셀렉터 */
+        div .child ~ span{background-color: coral; color: darkblue;}
+    </style>
+</head>
+<body>
+
+    <!-- box model -->
+    <!-- <div class="boxmodel">
+        box model
+    </div> -->
+    <div class="parent">
+        <div class="child">
+            1
+            <div>
+                <div>1-1</div>
+            </div>
+        </div>
+        <div>2</div>
+        <div>3</div>
+        <span>sample</span>
+    </div>
+</body>
+</html>

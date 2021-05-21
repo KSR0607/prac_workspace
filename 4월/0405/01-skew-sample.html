@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>skew sample</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background: #f2725a;
+        color: #fff;
+        text-shadow: 0 0 5px #000;
+    }
+    .skewBg{
+        background: #4a6274;
+        padding: 100px 0px;
+        transform: skewY(-10deg) translateY(-100px);
+    }
+    .skewBg .container{
+        transform:skewY(10deg);
+    }
+    .normalBg{
+        text-align: right;
+    }
+    .container{
+        padding: 100px 100px;
+    }
+</style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="skewBg">
+            <div class="container">
+                <h1>Kwon Serry blog</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nostrum.
+                </p>
+            </div>
+        </div>
+        <div class="normalBg">
+            <div class="container">
+                <h1>inside</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, recusandae!
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

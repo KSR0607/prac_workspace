@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>animation prac</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .wrap{
+        width: 800px;
+        margin: 100px auto;
+        background: #fff;
+        box-shadow: 0 0 5px 2px #888;
+    }
+    .wrap h1{
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        background: gold;
+        padding: 1rem;
+        text-shadow: 0 0 5px #777;
+    }
+    .myskill{
+        padding: 5px;
+    }
+    .myskill span{
+        color:lightslategrey
+        /* margin-left: 10px; */
+    }
+    .myskill p span:first-child{
+        display: inline-block;
+        width: 100px;
+    }
+    .myskill .skillbar{
+        border: 1px solid rgb(128, 128, 128);
+        padding: 3px;
+        border-radius: 20px;
+    }
+    .skillbar .skillprocess{
+        height: 20px;
+        border-radius: 20px;
+        width: 10%;
+        overflow: hidden;
+    }
+    .myskill:nth-child(1) .skillprocess {
+        width: 60%;
+        /* animation: skill1 2s ease-in 1 normal forwards ; */
+    }
+    .myskill:nth-child(2) .skillprocess{
+        width: 50%;
+        /* animation: skill2 2s ease-in 1 normal forwards ; */
+    }
+    .myskill:nth-child(3) .skillprocess{
+        width: 20%;
+        /* animation: skill3 2s ease-in 1 normal forwards ; */
+    }
+    .myskill:nth-child(4) .skillprocess{
+        width: 80%;
+        /* animation: skill4 2s ease-in 1 normal forwards ; */
+    }
+    .myskill:nth-child(5) .skillprocess{
+        width: 100%;
+        /* animation: skill5 2s ease-in 1 normal forwards ; */
+    }
+    /* @keyframes skill1 {
+        0%{
+            width: 10%;
+        }
+
+        100%{
+            width: 60%;
+        }
+    }
+    @keyframes skill2 {
+        0%{
+            width: 10%;
+        }
+        100%{
+            width: 50%;
+        }
+    }
+    @keyframes skill3 {
+        0%{
+            width: 10%;
+        }
+        100%{
+            width: 20%;
+        }
+    }
+    @keyframes skill4 {
+        0%{
+            width: 10%;
+        }
+        100%{
+            width: 80%;
+        }
+    }
+    @keyframes skill5 {
+        0%{
+            width: 10%;
+        }
+        100%{
+            width: 100%;
+        }
+    } */
+    .core {
+        height: 100%;
+        border: 1px solid gold;
+        border-radius: 10px;
+        background: linear-gradient(to right ,white,gold);
+        animation: full 2s;
+    }
+    @keyframes full{
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>software</h1>
+        <div class="skill">
+            <div class="myskill">
+                <p>
+                    <span>HTML</span>
+                    <span>60%</span>
+                </p>
+                <div class="skillbar">
+                    <div class="skillprocess">
+                        <div class="core"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="myskill">
+                <p>
+                    <span>CSS</span>
+                    <span>50%</span>
+                </p>
+                <div class="skillbar">
+                    <div class="skillprocess">
+                        <div class="core"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="myskill">
+                <p>
+                    <span>JAVASCRIPT</span>
+                    <span>20%</span>
+                </p>
+                <div class="skillbar">
+                    <div class="skillprocess">
+                        <div class="core"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="myskill">
+                <p>
+                    <span>PHOTOSHOP</span>
+                    <span>80%</span>
+                </p>
+                <div class="skillbar">
+                    <div class="skillprocess">
+                        <div class="core"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="myskill">
+                <p>
+                    <span>ILLUSTRATOR</span>
+                    <span>100%</span>
+                </p>
+                <div class="skillbar">
+                    <div class="skillprocess">
+                        <div class="core"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

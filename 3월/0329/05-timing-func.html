@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>timing function</title>
+    <style>
+        ul{
+            padding: 1rem;
+            border: 1px solid #000;
+        }
+        li {
+            list-style: none;
+        }
+        .item{
+            background: linear-gradient(to right, rgb(0, 119, 255), rgb(28, 255, 198));
+            height: 100px;
+            width:20%;
+            line-height: 100px;
+            padding-left: 1rem;
+            transition: 2s;
+            border: 1px solid rgb(5, 134, 255);
+            margin-bottom: 10px;
+        }
+        ul:hover .item{
+            width: 100%;
+        }
+        ul li:nth-child(1) .item{
+            /* width: 50%; */
+            transition-timing-function: ease;
+        }
+        ul li:nth-child(2) .item{
+            /* width: 80%; */
+            transition-timing-function: linear;
+        }
+        ul li:nth-child(3) .item{
+            /* width: 30%; */
+            transition-timing-function: ease-in;
+        }
+        ul li:nth-child(4) .item{
+            /* width: 90%; */
+            transition-timing-function: ease-out;
+        }
+        ul li:nth-child(5) .item{
+            /* width: 20%; */
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <div class="item">
+                ease
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                linear
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                ease-in
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                ease-out
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                ease-in-out
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

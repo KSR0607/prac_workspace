@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>rotate img</title>
+<style>
+    body{
+        text-align: center;
+    }
+    img{
+        width: 200px;
+        animation: rotatefilter 2s infinite ;
+    }
+    img:nth-child(1){
+        background: orange;
+    }
+    img:nth-child(2){
+        background: skyblue;
+    }
+    img:nth-child(3){
+        background: greenyellow;
+    }
+    @keyframes rotatefilter{
+        from{
+            filter: hue-rotate(0deg);
+        }
+        to{
+            filter: hue-rotate(160deg);
+        }
+    }
+</style>
+</head>
+<body>
+
+    <img src="./image/ffxiv_20210324_221749_601-removebg-preview.png" alt="">
+    <img src="./image/ffxiv_20210324_221749_601-removebg-preview.png" alt="">
+    <img src="./image/ffxiv_20210324_221749_601-removebg-preview.png" alt="">
+
+</body>
+</html>

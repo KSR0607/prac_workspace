@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>gradient</title>
+<style>
+    .box{
+        width: 150px;
+        height: 150px;
+        /* border: 1px solid orangered; */
+        border-radius: 50%;
+    }
+    .box.top{
+        background: linear-gradient(to bottom, #E66465, #9198E5);
+    }
+    .box.right{
+        background: linear-gradient(to right, #E66465, #9198E5);
+    }
+    .box.bottom{
+        background: radial-gradient(ellipse at center, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    }
+    .box.left{
+        background: linear-gradient(to bottom, #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%);
+    }
+</style>
+</head>
+<body>
+
+    <div class="box top">
+    </div>
+    <div class="box right">
+    </div>
+    <div class="box bottom">
+    </div>
+    <div class="box left">
+    </div>
+
+</body>
+</html>

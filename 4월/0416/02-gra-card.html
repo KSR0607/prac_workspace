@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>gra card</title>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    /* 영역을 잡고 */
+    .card{
+        position: relative;
+        margin: 0 auto ;
+        top: 200px;
+        width: 400px;
+        height: 500px;
+        transition: .5s;
+        /* border: 1px solid #000; */
+    }
+    .card:hover{
+        transform: translateY(-30px);
+    }
+    /* blure */
+    .card:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* background: linear-gradient(to bottom, rgb(20, 220, 177), rgb(157, 255, 0)); */
+        filter: blur(30px);
+    }
+    /* none blur */
+    .card:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgb(20, 220, 177), rgb(157, 255, 0));
+    }
+
+    /* gray opacity */
+    .card span{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;
+        background: rgba(255, 255, 255, 0.404);
+        z-index: 1;
+    }
+    .card .desc{
+        height: 100%;
+        color: #fff;
+        padding: 4.5rem 1rem;
+    }
+    .card .desc a{
+        color: gold;
+        font-weight: bold;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+    /* left gray opacity */
+    .card span:before{
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: rgba(167, 167, 167, 0.26);
+    }
+
+</style>
+</head>
+<body>
+    <div class="card">
+        <span>
+            <div class="desc">
+                <!-- <h1>Bellienger@Chocobo</h1> -->
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas pariatur eius corrupti molestiae voluptatem maxime ipsa rem animi aspernatur! Magni, distinctio architecto? Tempore vel natus, animi debitis consequuntur recusandae deserunt?</p> -->
+                <a href="#">WHO</a>
+            </div>
+        </span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+@charset "utf-8";
+@import "reset.css";
+
+#app {
+    width: 500px;
+    margin: 5% auto;
+    border: 1px solid #999;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+/* header */
+header{ 
+    width: 100%;
+    height: 50px;
+    font-size: 0;
+    border-bottom: 1px solid #999;
+}
+header div{ 
+    display: inline-block;
+}
+header .instaCamera{
+    width: 15%;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 10px;
+}
+header .instaCamera i{
+    font-size: 30px;
+}
+header .instaLogo{
+    width:70%;
+    text-align: center;
+}
+header .imgBox{
+    width: 100px;
+    margin-top: 15px;
+}
+header .instaLogo img{
+    width: 100%;
+    height: 29px;
+}
+header .instaSend {
+    width: 15%;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 10px;
+}
+header .instaSend i{
+    font-size: 30px;
+}
+
+/* main */
+.instaStory{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #999;
+}
+.instaStory div{
+    display: inline-block;
+}
+.instaStory .instaUserImage1{
+    width: 100px;
+    margin: 1%;
+}
+.instaStory .instaUserImage1 img{
+    width: 100%;
+    border-radius: 50px;
+}
+.instaStory .instaUserImage1 p{
+    font-size: 13px;
+    color: #6e6e6e;
+    text-align: center;
+}
+.instaStory .instaUserImage2 {
+    width: 100px;
+    margin: 1%;
+}
+.instaStory .instaUserImage2 img{
+    width: 100%;
+    border-radius: 50px;
+    border: 3px solid rgba(225, 129, 10, 0.696);
+}
+.instaStory .instaUserImage2 p{
+    font-size: 13px;
+    color: #6e6e6e;
+    text-align: center;
+}
+
+
+.instaFeed{
+    font-size: 0;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    border-bottom: 1px solid #999;
+}
+.instaFeed div{
+    display: inline-block;
+}
+.instaFeed .userFeed{
+    width: 50px;
+    height: 100%;
+}
+.instaFeed .userFeed img{
+    width: 100%;
+    border-radius: 25px;
+}
+.instaFeed .userprofile{
+    vertical-align: top;
+}
+.instaFeed .userprofile p{
+    width: 350px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+.instaFeed .userprofile small{
+    font-size: 11px;
+    padding-left: 10px;
+}
+.instaFeed .usermore{
+    width: 50px;
+    vertical-align: top;
+}
+.instaFeed .usermore i{
+    font-size: 30px;
+    margin-left:35px;
+    margin-top: 10px;
+}
+
+.instaImage .userImage{
+    font-size: 0;
+    border-bottom: 1px solid #999;
+}
+.instaImage .userImage img{
+    width: 100%;
+}
+
+.instaInfo {
+    width: 100%;
+    height: 80px;
+}
+.instaInfo .userInfo{
+    margin: 1%;
+}
+.instaInfo .userInfo i{
+    margin: 5px;
+}
+.instaInfo .userActive{
+    margin-left: 10px;
+}
+
+/* footer */
+footer{
+    height: 50px;
+}
+
+footer .userMenu ul{
+    border-top: 1px solid #999;
+}
+footer .userMenu ul li{
+    text-align: center;
+    width: 25%;
+    line-height: 65px;
+    display: inline-block;
+}
+footer .userMenu ul li a{
+    display: block;
+}

@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+#wrap{
+    padding: 20px;
+    background-color: floralwhite;
+}
+.bold{
+    font-weight: bold;
+}
+/* primary:기본적인 */
+.primary-color{
+    color: #0645AD;
+}
+.titleBox h1{
+    margin: 0;
+    font-weight: 400;
+}
+.titleBox hr{
+    margin-top: 5px;
+    margin-bottom: 0;  
+}
+.titleBox p{
+    margin-top: 10px;
+}
+.request{
+    border: 1px solid skyblue;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.request p{
+    line-height: 1.8em;
+}
+.request span{
+    color: #0645AD;
+    font-weight: bold;
+}
+.delete {
+    border: 1px solid skyblue;
+    padding-left: 20px;
+}

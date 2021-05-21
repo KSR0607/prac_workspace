@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>float simple pro</title>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background: url(./float/float-sample-header-bg.jpg)no-repeat center/cover;
+        height: 600px;
+        text-align: center;
+        margin-bottom: -200px;
+    }
+    header h1{
+        color: #fff;
+        font-size: 3rem;
+        text-shadow: 0 3px 3px #999;
+        padding-top: 100px;
+    }
+    div.cardItem {
+        margin: 1rem auto;
+        background: #fff;
+        width: 1000px;
+        height: 335px;
+        border-radius: 15px;
+        box-shadow: 0 5px 8px #888;
+    }
+    div.desc{
+        padding: 1.5rem;
+    }
+    div.desc button {
+        background: dodgerblue;
+        color: #fff;
+        border: none;
+        width: 100px;
+        height: 50px;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+    img.left {
+        padding: 1rem;
+        float: left;
+    }
+    div.desc{
+        overflow: hidden;
+    }
+    img.right{
+        float: right;
+        padding: 1rem;
+    }
+    div.cardItem:nth-of-type(2) .desc{
+        text-align: right;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>beginning your journey</h1>
+    </header>
+    <div class="cardItem">
+        <img src="./float/float-item.png" class="left">
+        <div class="desc">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deserunt aspernatur ad maxime. Magnam nostrum veritatis accusamus, ducimus, quasi quisquam libero nihil facere repellat eos ipsum neque, iure exercitationem. Dicta.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deserunt aspernatur ad maxime. Magnam nostrum veritatis accusamus, ducimus, quasi quisquam libero nihil facere repellat eos ipsum neque, iure exercitationem. Dicta.
+            </p>
+            <button>get Ticket</button>
+        </div>
+    </div>
+    <div class="cardItem">
+        <img src="./float/float-item.png" class="right">
+        <div class="desc">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deserunt aspernatur ad maxime. Magnam nostrum veritatis accusamus, ducimus, quasi quisquam libero nihil facere repellat eos ipsum neque, iure exercitationem. Dicta.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deserunt aspernatur ad maxime. Magnam nostrum veritatis accusamus, ducimus, quasi quisquam libero nihil facere repellat eos ipsum neque, iure exercitationem. Dicta.
+            </p>
+            <button>get Ticket</button>
+        </div>
+    </div>
+    <div class="cardItem">
+        <img src="./float/float-item.png" class="left">
+        <div class="desc">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deserunt aspernatur ad maxime. Magnam nostrum veritatis accusamus, ducimus, quasi quisquam libero nihil facere repellat eos ipsum neque, iure exercitationem. Dicta.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deserunt aspernatur ad maxime. Magnam nostrum veritatis accusamus, ducimus, quasi quisquam libero nihil facere repellat eos ipsum neque, iure exercitationem. Dicta.
+            </p>
+            <button>get Ticket</button>
+        </div>
+    </div>
+
+</body>
+</html>

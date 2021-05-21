@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>grid system</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .clearfix:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    img{
+        max-width: 100%;
+        vertical-align: top;
+    }
+
+    /* grid-system */
+    .grid-1-3 {
+        width: 33.3333%;
+    }
+    .grid-2-3 {
+        width: 66.6666%;
+    }
+    .grid-3-3 {
+        width: 100%;
+    }
+    /* .grid-4-4 {
+        width: 100%;
+    } */
+    .grid {
+        width: 1440px;
+        margin: 0 auto;
+        background: pink;
+    }
+    .grid-item{
+        /* width: 25%; */
+        /* padding: 1rem; */
+        /* padding-top: 25%; */
+        height: 0;
+        /* background: blue; */
+        float: left;
+        position: relative;
+    }
+    .grid-item .content{
+        background: gold;
+        padding-top: 200%;
+    }
+    .grid-item img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* margin: 1rem; */
+        padding: 1rem;
+    }
+    /* .grid-item:nth-child(5),
+    .grid-item:nth-child(6),
+    .grid-item:nth-child(7){
+        width: 33.3333%;
+    }
+    .grid-item:nth-child(8),
+    .grid-item:nth-child(9){
+        width: 50%;
+    } */
+</style>
+</head>
+<body>
+
+    <div class="grid clearfix">
+        <div class="grid-item grid-1-3">
+            <div class="content">
+                <img src="./img/float-item2.png" alt="">
+            </div>
+        </div>
+        <!-- <div class="grid-item grid-1-3">
+            <img src="./img/float-item.png" alt="">
+        </div>
+        <div class="grid-item grid-1-3">
+            <img src="./img/float-item.png" alt="">
+        </div>
+        <div class="grid-item grid-2-3">
+            <img src="./img/float-item.png" alt="">
+        </div>
+        <div class="grid-item grid-1-3">
+            <img src="./img/float-item.png" alt="">
+        </div> -->
+        <!-- <div class="grid-item grid-1-4">
+            <img src="./img/float-item.png" alt="">
+        </div>
+        <div class="grid-item grid-4-4">
+            <img src="./img/float-item.png" alt="">
+        </div> -->
+        <!-- <div class="grid-item">
+            <img src="./img/float-item3.png" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="./img/float-item3.png" alt="">
+        </div> -->
+    </div>
+
+</body>
+</html>

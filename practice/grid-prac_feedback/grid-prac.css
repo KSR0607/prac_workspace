@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+/* reset.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+body{
+    background: url(./img/bg1.png)no-repeat center/cover;
+}
+/* 
+ section 자식 요소 또는 class에 .inner를 만들거나
+ 상위 요소에 .wrapper를 만들어서 max-width 1250px;을 설정해 주는게 더 좋을거 같아요
+ 지금은 단일 page라 영향이 없지만 많아지면 section에 준 값으로 인해 영향을 받는 경우가 생길 수 있어요
+*/
+section{
+    max-width: 1250px;
+    background: #eee;
+    margin: 0 auto;
+}
+
+/* grid system */
+.grid-1-12 { width: 8.33333333%; }
+.grid-2-12 { width: 16.66666667%; }
+.grid-3-12 { width: 25%; }
+.grid-4-12 { width: 33.33333333%; }
+.grid-5-12 { width: 41.66666667%; }
+.grid-6-12 { width: 50%; }
+.grid-7-12 { width: 58.33333333%; }
+.grid-8-12 { width: 66.66666667%; }
+.grid-9-12 { width: 75%; }
+.grid-10-12 { width: 83.33333333%; }
+.grid-11-12 { width: 91.66666667%; }
+.grid-12-12 { width: 100%;}
+
+
+/* header */
+header{
+    background: #282828;
+    color: #eee;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+header h1{
+    float: left;
+}
+header .user-menu{
+    float: right;
+    margin-right: 2%;
+}
+.user-menu .menu-item{
+    display: inline-block;
+    padding: 10px 10px;
+}
+.user-menu .menu-item:hover a{
+    animation: menuitem .5s ease-in infinite alternate;
+}
+
+@keyframes menuitem {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-3px);
+    }
+}
+
+
+/* user-profile */
+.user-profile{
+    margin-top: 6rem;
+    border-bottom: 1px solid #888;
+    border-radius: 2rem 2rem 0 0;
+    overflow: hidden;
+}
+.user-profile img{
+    border-radius: 50%;
+    margin: 1rem;
+    float: left;
+}
+.user-introduce{
+    width: 50%;
+    margin-top:10rem;
+    margin-right:6rem;
+    vertical-align: top;
+    padding: 1rem;
+    background: rgb(255, 255, 255);
+    position: relative;
+    float: right;
+}
+.user-introduce:after{
+    content: '';
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    background: rgba(187, 187, 187, 0.363);
+    top: -5px;
+    left: -20px;
+    transform: rotate(-15deg);
+}
+.user-introduce::before{
+    content: '';
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    background: rgba(187, 187, 187, 0.363);
+    bottom: -5px;
+    right: -20px;
+    transform: rotate(-15deg);
+}
+
+/* user-gallery */
+.user-gallery h1{
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 1px solid #888;
+    background: linear-gradient(to bottom, #eee, #fff);
+}
+
+.user-img {
+    /* margin: 1rem; */
+    float: left;
+}
+.cover{
+    padding-top: 100%;
+    position: relative;
+    margin: 1rem;
+}
+.user-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:768px){
+    .l-grid-tablet-1-12 { width: 8.33333333%; }
+    .l-grid-tablet-2-12 { width: 16.66666667%; }
+    .l-grid-tablet-3-12 { width: 50%; }
+    .l-grid-tablet-4-12 { width: 33.33333333%; }
+    .l-grid-tablet-5-12 { width: 41.66666667%; }
+    .l-grid-tablet-6-12 { width: 50%; }
+    .l-grid-tablet-7-12 { width: 58.33333333%; }
+    .l-grid-tablet-8-12 { width: 66.66666667%; }
+    .l-grid-tablet-9-12 { width: 75%; }
+    .l-grid-tablet-10-12 { width: 83.33333333%; }
+    .l-grid-tablet-11-12 { width: 91.66666667%; }
+    .l-grid-tablet-12-12 { width: 100%;}
+
+    section{
+        max-width: 90%;
+        background: #eee;
+        margin: 0 auto;
+    }
+    .user-profile{
+        margin-top: 6rem;
+        border-bottom: 1px solid #888;
+        border-radius: 2rem 2rem 0 0;
+        overflow: hidden;
+    }
+    .user-profile img{
+        border-radius: 50%;
+        margin: 1rem;
+        max-width: 30%;
+        float: left;
+    }
+    .user-introduce{
+        margin: 5% 6%;
+        float: right;
+        padding: 1rem;
+        background: rgb(255, 255, 255);
+        position: relative;
+    }
+    .user-introduce:after{
+        width: 20%;
+    }
+    .user-introduce::before{
+        width: 20%;
+    }
+}
+@media (max-width:480px){
+    .l-grid-mobile-1-12 { width: 8.33333333%; }
+    .l-grid-mobile-2-12 { width: 16.66666667%; }
+    .l-grid-mobile-3-12 { width: 50%; }
+    .l-grid-mobile-4-12 { width: 33.33333333%; }
+    .l-grid-mobile-5-12 { width: 41.66666667%; }
+    .l-grid-mobile-6-12 { width: 50%; }
+    .l-grid-mobile-7-12 { width: 58.33333333%; }
+    .l-grid-mobile-8-12 { width: 66.66666667%; }
+    .l-grid-mobile-9-12 { width: 75%; }
+    .l-grid-mobile-10-12 { width: 83.33333333%; }
+    .l-grid-mobile-11-12 { width: 91.66666667%; }
+    .l-grid-mobile-12-12 { width: 100%;}
+
+    header h1{
+        float: none;
+        text-align: center;
+    }
+    header .user-menu{
+        float: none;
+        text-align: center;
+    }
+    .user-profile{
+        margin-top: 8rem;
+        border-bottom: 1px solid #888;
+        border-radius: 2rem 2rem 0 0;
+        overflow: hidden;
+    }
+    .user-profile img{
+        text-align: center;
+        border-radius: 50%;
+        max-width: 80%;
+        margin-left: 2.5rem;
+    }
+    .user-introduce{
+        padding: 1rem;
+        background: rgb(255, 255, 255);
+        width: 90%;
+        position: relative;
+    }
+    .user-introduce:after{
+        transform: rotate(0);
+        left: 40%;
+        top: -5%;
+    }
+    .user-introduce::before{
+        display: none;
+    }
+}

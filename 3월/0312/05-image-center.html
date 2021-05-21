@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>image center</title>
+
+    <style>
+        .box1 {
+            width: 500px;
+            height: 500px;
+            background-color: darkcyan;
+            /* 이미지 수직중앙정렬 1번방법 */
+            /* text-align: center;
+            display: table-cell;
+            vertical-align: middle; */
+            /* 이미지 수직중앙정렬 2번방법 */
+            text-align: center;
+            /* 부모요소가 꼭 있어야 한다. */
+            line-height: 500px;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            vertical-align: middle;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="box1">
+        <img src="images/florence.jpg" alt="">    
+    </div>
+    
+</body>
+</html>

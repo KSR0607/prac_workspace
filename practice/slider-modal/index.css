@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/* reset.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+
+
+/* header */
+input[name=tab]{
+    display: none;
+}
+header{
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+header h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 2px 5px #888;
+}
+header .sliderView{
+    height: 100%;
+}
+header .sliderView .slider{
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    top: 0;
+    font-size: 0;
+    z-index: -1;
+    transition: all 300ms;
+}
+header .sliderView .slider li.sliderBg{
+    display: inline-block;
+    width: 33.3333%;
+    height: 100%;
+}
+.sliderBg:nth-child(1){
+    background: url(./img/bg1.png) no-repeat center/cover;
+}
+.sliderBg:nth-child(2){
+    background: url(./img/bg2.png) no-repeat center/cover;
+}
+.sliderBg:nth-child(3){
+    background: url(./img/bg3.png) no-repeat center/cover;
+}
+header .sliderBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+}
+header .sliderBtn label{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #888;
+}
+input[id=tab1]:checked ~ .sliderBtn label[for=tab1]{
+    background: coral;
+}
+input[id=tab2]:checked ~ .sliderBtn label[for=tab2]{
+    background: coral;
+}
+input[id=tab3]:checked ~ .sliderBtn label[for=tab3]{
+    background: coral;
+}
+input[id=tab1]:checked ~ .sliderView .slider{
+    left: 0%;
+}
+input[id=tab2]:checked ~ .sliderView .slider{
+    left: -100%;
+}
+input[id=tab3]:checked ~ .sliderView .slider{
+    left: -200%;
+}
+
+nav.gnb {
+    background: rgb(219, 219, 219);
+}
+nav.gnb ul.menu{
+    background: #000;
+    height: 70px;
+    font-size: 0;
+}
+nav.gnb ul.menu li.menuItem{
+    display: inline-block;
+    width: 100px;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background: #000;
+    font-size: 1rem;
+    color: crimson;
+    position: relative;
+}
+nav.gnb ul.menu li.menuItem:hover .menuSub{
+    opacity: 1;
+}
+nav.gnb ul.menu li a{
+    display: block;
+    transition: .3s;
+}
+nav.gnb ul li a:hover{
+    background: crimson;
+    color: #000;
+}
+li.menuItem ul.menuSub{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    background: #eee;
+    width: 100px;
+}

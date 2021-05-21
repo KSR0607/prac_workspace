@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* 위에꺼 꼭 있어야함 동역해주는 약속 */
+/* 캐릭터셋(charset)을 설정한다.는 뜻 */
+
+p {
+    font-size: 30px;
+    color: coral;
+}

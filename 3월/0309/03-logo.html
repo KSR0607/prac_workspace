@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>logo</title>
+<style>
+    .logo{
+        background-color: skyblue;
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+    }
+    .logo a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        background-color: green;
+        border-radius: 20px;
+        text-transform: uppercase;
+    }
+    .logo a:link {
+        color: #fff;
+    }
+    .logo a:visited {
+        color: #fff;
+        background-color: #ddd;
+    }
+    .logo a:hover{
+        background-color: green;
+    }
+    .logo a:active, .logo a:focus {
+        background-color: tomato;
+        border: 0px solid black;
+        /* 웹에서 tab했을시 활성화되면 테두리가 생기는데 그걸 없애주는 태그 */
+        /* 그러나 포커스는 표시가 나야하니까 안쓰는게좋다  */
+        outline: 0;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <h1 class="logo">
+            <a href="http://www.naver.com">
+                naver
+            </a>
+        </h1>
+
+    </div>
+</body>
+</html>

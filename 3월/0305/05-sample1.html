@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>sample1</title>
+<style>
+    .wrap {width: 300px;
+    height: 500px;
+    background-color: pink;}
+
+    .wrap div {width: 100px; height: 100px;
+    background-color: white;}
+
+    .box1 + div{background-color: teal;}
+    .orange ~ li{/*orange 클래스의 다음 일반 형제요소들 모두*/
+    color: red;
+}
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1"></div>
+        <div></div>
+        <div></div>
+    </div>
+
+
+    <ul>
+        <li>딸기</li>
+        <li>수박</li>
+        <li class="orange">오렌지</li>
+        <li>망고</li>
+        <li>사과</li>
+    </ul>
+</body>
+</html>

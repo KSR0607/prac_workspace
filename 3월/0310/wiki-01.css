@@ -1,0 +1,82 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrap {
+    padding: 20px;
+}
+header{
+    margin: 10px;
+}
+header p{
+    padding: 10px 10px 10px 0;
+}   
+
+.host {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid skyblue;
+}
+.host h1{
+    margin-bottom: 10px;
+}
+
+.delete {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid skyblue;
+}
+.delete h4{
+    background-color: skyblue;
+    margin-bottom: 10px;
+}
+
+.admit {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid skyblue;
+}
+.admit h4{
+    background-color: skyblue;
+}
+.admit ul li{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.request {
+    border: 1px solid black;
+    margin-top: 20px;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    padding: 50px;
+}
+.request h3 {
+    margin-bottom: 10px;
+    color: lightskyblue;
+}
+
+
+.other{
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid skyblue;
+}
+.other h4{ 
+    background-color: skyblue;
+    margin-bottom: 10px;
+}
+.other ul li{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+footer {
+    padding: 5px;
+    color: skyblue;
+    border: 1px solid black;
+    margin: 10px;
+}

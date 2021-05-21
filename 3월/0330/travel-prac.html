@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>travel practice</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background: #111;
+        color: #999;
+    }
+    li{
+        list-style: none;
+    }
+    img{
+        max-width: 100%;
+    }
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+    .travel_place{
+        border: 1px solid #999;
+        width: 500px;
+        margin: 0 auto;
+    }
+    .travel_place ul{
+        text-align: center;
+    }
+    .travel_place ul li{
+        display: inline-block;
+        width: 200px;
+        margin: 10px;
+    }
+    .travel_place ul li a{
+        transition: 1s;
+        display: block;
+    }
+    .travel_place ul li a:hover{
+        opacity: 0.8;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <h2>hover / zoom / transition</h2>
+    </header>
+    <section class="travel_place">
+        <ul>
+            <li>
+                <a href="#"><img src="./images/hollywood.jpg" alt="hollywood"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/los-angeles1.jpg" alt="hollywood"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/los-angeles2.jpg" alt="hollywood"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/manhattan.jpg" alt="hollywood"></a>
+            </li>
+        </ul>
+    </section>
+
+</body>
+</html> 

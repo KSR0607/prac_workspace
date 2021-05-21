@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>sign-up</title>
+</head>
+<body>
+
+    <header>
+        <hr>
+        <h1><a href="../index.html">Deflix</a></h1>
+        deflix에 오신 것을 환영합니다.
+        
+        <ol>
+            <li><a href="main.html">메인페이지</a></li>
+            <li><a href="data.html">상세페이지</a></li>
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="sign-up.html">회원가입</a></li>
+            <li><a href="../index.html">로그아웃</a></li>
+        </ol>
+
+        <hr>
+    </header>
+
+    <section>
+        <article>
+            <form action="main.html" method="GET">
+                <fieldset>
+                    <legend>이용약관 동의</legend>
+                    <textarea name="info" id="" cols="50" rows="20" disabled>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sed nihil cupiditate voluptates accusamus aspernatur debitis,
+                        eveniet sequi! Eum architecto est neque natus assumenda incidunt
+                        alias quibusdam eaque asperiores optio? Quam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sed nihil cupiditate voluptates accusamus aspernatur debitis,
+                        eveniet sequi! Eum architecto est neque natus assumenda incidunt
+                        alias quibusdam eaque asperiores optio? Quam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sed nihil cupiditate voluptates accusamus aspernatur debitis,
+                        eveniet sequi! Eum architecto est neque natus assumenda incidunt
+                        alias quibusdam eaque asperiores optio? Quam.
+                    </textarea>
+                    <br>
+                    <input type="checkbox" value="deflix-allow" id="allow" required>
+                    <label for="allow">디플릭스 이용약관 동의</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>회원 정보</legend>
+                    
+                    <br>
+                    <p>
+                        <label for="member-email">아이디 : </label>
+                        <input type="email" name="member-email" id="member-email" required>
+                    </p>
+                    <br>
+                    <p>
+                        <label for="member-pw">비밀번호 : </label>
+                        <input type="password" name="member-pw" id="member-pw" required>
+                    </p>        
+                    <br>
+                    <p>
+                        <label for="member-pw2">비밀번호 확인 : </label>
+                        <input type="password" name="member-pw2" id="member-pw2" required>
+                    </p>
+                    <br>
+                    <p>
+                        <label for="member-name">이름 : </label>
+                        <input type="text" name="member-name" id="member-name" required>
+                    </p>
+                    <br>
+                    <p>
+                    <label for="member-month">생년월일 : </label>
+                        <input type="month" name="member-month" id="member-month" required>
+                        <input type="number" name="member-date" id="member-date" max="31" min="0" required>
+                    </p>
+                    <br>
+                    <p>
+                        <label for="gender">성별 : </label>
+                            <select name="gender" id="gender" required>
+                                <option value="">선택</option>
+                                <option value="female">여성</option>
+                                <option value="male">남성</option>
+                            </select>
+                    </p>
+                    <br>
+                    <p>
+                        <label for="phone">전화번호 : </label>
+                        <select name="phone" id="phone" required>
+                                <option value="">선택</option>
+                                <option value="skt">SKT</option>
+                                <option value="ktf">KTF</option>
+                                <option value="lg">LG</option>
+                        </select>
+                        <input type="tel" name="member-phone1" id="" maxlength="3" required>
+                        -
+                        <input type="tel" name="member-phone2" id="" maxlength="4" required>
+                        -
+                        <input type="tel" name="member-phone3" id="" maxlength="4" required>
+                    <br>
+                    </p>
+                    <a href="main.html"><input type="submit" value="가입완료" required></a>
+                </fieldset>
+            </form>
+        </article>
+
+        <button><img src="./data-file-01.jpg" alt="strangerthings"><br>
+            기묘한이야기</button>
+    </section>
+
+
+    <hr>
+    <footer>
+        <address>
+            Address : 대구광역시 중구 그린빌딩<br>
+            <!-- <a href="tel:054-111-9121">
+            Tel : 054) 111-9121</a><br>
+            <a href="mailto:hans.park.hev@dtravel.com">
+            E-mail : hans.park.hev@dtravel.com</a><br> -->
+            Tel : <a href="tel:054-123-4567">
+                054-123-4567</a><br>
+            E-mail : <a href="mailto:wwwserrycom@naver.com">
+                wwwserrycom@naver.com</a><br>
+            &copy;copy All right reserve.
+        </address>
+    </footer>
+
+</body>
+</html>
